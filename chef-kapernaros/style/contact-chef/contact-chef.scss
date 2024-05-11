@@ -1,0 +1,200 @@
+$primaryColor: #f8f8f5;
+$gold: #b59b07;
+#contactPage{
+    background-color: #eeededfa;
+    #chefForm{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-left: 10vh;
+        padding-right: 50px;
+        #lineGold{
+            position: absolute;
+            display: flex;;
+            height: 100%;
+            width: 4px;
+            background-color: #b59b07;
+            left: 80%;
+        }
+        #lineGold2{
+            position: absolute;
+            display: flex;;
+            height: 100%;
+            width: 2px;
+            background-color: #b59b07;
+            left: 79.5%;
+        }  
+        #logoPic{
+            width: 35vw;
+            height: 35vw;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: center; 
+            position: absolute;
+            left: 55%;
+            top: 20%;
+            border: 7px solid $gold;
+            &::after{
+                content: '';
+                display: flex;;
+                height: 100%;
+                width: 2px;
+                background-color: #b59b07;
+            }  
+        }
+        #myForm{
+            width: 40% !important;
+            height: fit-content;
+            background-color: #fffffffa;
+            font-family: 'Inter';
+            font-size: 15px;
+            color: #b59b07;
+            border: 1px solid #72727222;
+            box-shadow: 6px 6px 6px #75757525 ;
+            z-index: 5;
+            
+            input{
+                height: 25px;
+                font-family: 'Inter';
+                font-size: 15px;
+                color: #000000;
+                &:focus-visible{
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    border-bottom: 1px solid #b59b07;
+                    outline-width: 0px;
+                    background-color: transparent;
+                }
+                &.inputText{
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    border-bottom: 1px solid #b59b07;
+                }
+                background-color: transparent;
+            }
+            textarea{
+                resize: none;
+                font-family: 'Inter';
+                font-size: 15px;
+                background-color: transparent;
+                border: 1px solid #b59b07;
+                padding: 5px;
+                &:focus-visible{
+                    outline-width: 0px;
+                    border: 1px solid #b59b07;
+                }
+            }
+            button{
+                border-color: #b59b07 !important;
+                color: #b59b07 !important;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1301px) and (max-width: 1400px) {
+
+}
+@media only screen and (max-width: 1361px) {
+ 
+}
+@media only screen and (min-width: 701px) and (max-width: 930px) {
+
+}
+@media only screen and (min-width: 701px) and (max-width: 1100px) {
+    #chefForm{
+        margin-top: 14vh;
+    }
+
+}
+@media only screen and (max-width: 1080px) {
+    #contactPage{
+        background-color: #eeededfa;
+        width: 100%;
+        height: 80vh;
+        #chefForm{
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            #lineGold{
+                position: absolute;
+                display: flex;;
+                height: 4px;
+                width: 100%;
+                background-color: #b59b07;
+                left: 0%;
+                bottom: 50px;
+            }
+            #lineGold2{
+                position: absolute;
+                display: flex;;
+                width: 100%;
+                height: 2px;
+                background-color: #b59b07;
+                left: 0%;
+                bottom: 40px;
+            }  
+            #logoPic{
+                display: none !important;
+            }
+            #myForm{
+                margin-top: 70px;
+                width: 90% !important;
+                height: fit-content;
+                background-color: #fffffffa;
+                font-family: 'Inter';
+                font-size: 15px;
+                color: #b59b07;
+                border: 1px solid #72727222;
+                box-shadow: 6px 6px 6px #75757525 ;
+                z-index: 5;
+                
+                input{
+                    height: 25px;
+                    font-family: 'Inter';
+                    font-size: 15px;
+                    color: #000000;
+                    &:focus-visible{
+                        border-top: 0px;
+                        border-left: 0px;
+                        border-right: 0px;
+                        border-bottom: 1px solid #b59b07;
+                        outline-width: 0px;
+                        background-color: transparent;
+                    }
+                    &.inputText{
+                        border-top: 0px;
+                        border-left: 0px;
+                        border-right: 0px;
+                        border-bottom: 1px solid #b59b07;
+                    }
+                    background-color: transparent;
+                }
+                textarea{
+                    resize: none;
+                    font-family: 'Inter';
+                    font-size: 15px;
+                    background-color: transparent;
+                    border: 1px solid #b59b07;
+                    padding: 5px;
+                    &:focus-visible{
+                        outline-width: 0px;
+                        border: 1px solid #b59b07;
+                    }
+                }
+                button{
+                    border-color: #b59b07 !important;
+                    color: #b59b07 !important;
+                }
+            }
+        }
+    }
+}

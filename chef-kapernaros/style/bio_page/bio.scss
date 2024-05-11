@@ -1,0 +1,487 @@
+$primaryColor: #f8f8f5;
+$gold: #b59b07;
+
+#carouselSec{ background: linear-gradient(#FFFFFF,  #F5F5F5); }
+#valueSec{ background: linear-gradient(#F5F5F5,#FFFFFF); }
+
+.carouselContainer {
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+
+    #carousel{
+        width: 100%;
+        height: 80%;
+        max-width: 1500px;
+        min-width: 900px;
+        min-height: 480px;
+        align-items: center;
+        .singleCarouselSlide{
+            position: relative;
+            min-height: 480px;
+            max-height: 550px;
+            width: 90%;
+            box-shadow: 6px 6px 6px #aeaeae;
+           
+            #slideDescription{
+                width: 40%;
+                min-height: 480px;
+                color: #FFFFFF;
+                i{
+                    cursor: pointer;
+                    font-size: 68px !important;
+                    &:hover{
+                        font-size: 65px !important;
+                        text-shadow: 3px 0px 2px $gold;
+                    }
+                    &:active{
+                        font-size: 68px !important;
+                        text-shadow: 0px 0px 0px $gold;
+                    }
+                }
+                #prevSlide{
+                    position: absolute;
+                    top: 10px;
+                }
+                #nextSlide{
+                    position: absolute;
+                    bottom: 10px;
+                }
+            }
+            #slidePic{
+                width: 70%;
+                position: relative;
+                display: flex;
+                p{
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    color: $primaryColor;
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+                #picNote{
+                    text-shadow: 
+                    1px 1px 2px #000,
+                    -1px -1px 2px #000,
+                     1px -1px 2px #000,
+                    -1px  1px 2px #000;
+                    &:not(.note_0){
+                        opacity: 0;
+                    }
+                    transition: opacity 1s ease;
+                    &.darker{
+                        opacity: 1 !important;
+                    }
+                }
+            }
+            #slideImg{
+                height: 480px;
+                width: 0%;
+                object-fit: cover !important;
+                object-position:center !important;
+                transition: width 0.5s ease-in-out;
+            }
+            #slideText{
+                scale: 0;
+                transition: scale 0.5s ease-in-out;
+            }
+        }
+    }
+    #timeline{
+        position: relative;
+        padding-left: 40px;
+        #lineWhite{
+            position: absolute;
+            background-color: white;
+            width: 1px;
+            left: calc(50% + 20px);
+        }
+        #circleWhite{
+            background-color: white;
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            left: calc(50% + 10px);
+            position: absolute;
+            opacity: 0;
+            transition: transform 0.5s ease;
+            &.position_0{
+                transform: translateY(0%);
+                opacity: 1;
+            }
+
+            &:not(.circle_0).moveDown{ transform: translateY(-1150%); }
+            &:not(.circle_5).moveUp{ transform: translateY(1150%); }
+        }
+    }
+}
+.cardsIntro{
+    width: 95%;
+    text-align: justify;
+}
+#cardsContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .singleCard{
+        width: 100%;
+        max-width: 1400px;
+        &.reverse{
+            flex-direction: row-reverse;
+        }
+        img{
+            width: 50%;
+            max-width: 400px;
+            max-height: 400px;
+            object-fit: cover;
+            object-position: center 45%;
+            aspect-ratio: 1.1/1;
+        }
+        .cardDescr{
+            max-width: 550px;
+            text-align: justify;
+
+        }
+    }
+}
+.maxWidth1500 {
+    max-width: 1500px !important;
+}
+.highlights{
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.slidePic {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+section#career-highlights{
+    background-color: #2F2F2F;
+    .highlights{
+        padding: 25px 25px 25px 25px;
+        list-style: none;   
+        ::marker{
+            color: $gold !important;
+        }
+        li{
+            width: fit-content;
+            font-weight: 600;
+            color: #000;
+            border: 1px solid #2F2F2F;
+            background-color: #ffffff;
+            position: relative;
+            transition: background-color .4s ease;
+            z-index: 10;
+            &::before{
+                content: '';
+                background-color: $gold;
+                display: flex;
+                position: absolute;
+                left: -10px;
+                bottom: 0px;
+                height: 100%;
+                width: 10px;
+                transition: all .3s ease;
+            }
+            &:hover{
+                z-index: 33; 
+                font-weight: 600;
+                &::before{
+                    z-index: -1;
+                    width: 100%;
+                    left: 0px;
+                    background-color: $gold;
+                    
+                }
+
+            }
+        }
+    }
+}
+.animated-highlight { color: $gold !important; }
+
+@media only screen and (min-width: 1301px) and (max-width: 1400px) {
+    
+}
+@media only screen and (max-width: 1200px) {
+    #cardsContainer { width: 95% !important;}
+ 
+}
+@media only screen and (min-width: 701px) and (max-width: 930px) {
+    body{
+        width: 100% !important;
+        position: relative;
+    }
+
+    section{
+        width: 95% !important;
+        padding: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        &#valueSec{
+            padding: 0px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            width: 100%;
+        }
+        &#career-highlights{
+            padding: 0px !important;
+            width: 100% !important;
+            li{
+                font-size: 14px;
+            }
+            p{
+                font-size: 16px !important;
+                &.textGold{
+                    font-size: 22px !important;
+                }
+            }
+        }
+        p{
+            text-align: left;
+            font-size: 16px !important;
+            span.textGold{
+                font-size: 22px !important;
+            }
+        }
+    }
+    #carouselSec{ 
+        margin-top: 14vh !important;
+        padding: 20px !important;
+        width: 95% !important;
+        >div {
+            padding: 0px !important;
+            p{
+                text-align: left;
+                font-size: 16px !important;
+                span.textGold{
+                    font-size: 22px !important;
+                }
+            }
+        }
+    
+        #carousel{
+            margin-top: 30px;
+            min-width: 95% !important;
+            max-height: 400px;
+            min-height: 400px;
+            .singleCarouselSlide{
+                max-height: 400px;
+                min-height: 400px;
+                #timeline{
+    
+                    background-color:  #ffffff !important;
+                    padding-left: 0px;
+                    z-index: 15;
+                    #lineWhite{
+                        background-color: #ffffff !important;
+                    }
+                    #circleWhite{
+                        background-color: #ffffff !important;
+                    }
+                }
+                #slideDescription{
+                    width: 100%;
+                    min-width: 300px !important;
+                    max-height: 400px;
+                    min-height: 400px;
+                    background-color:  #00000047 !important;
+                    padding-left: 10px;
+                    z-index: 11;
+                    #slideText{
+                        background-color: #000000a3;
+                        padding: 10px !important;
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 45px !important;
+                    }
+                    #nextSlide{
+                        bottom: 2%;
+    
+                    }
+                    #prevSlide{
+                        top: 2%;
+                    }
+                }
+                #slidePic{
+                    position: absolute;
+                    width: 100%;
+                    img{
+                        height: 400px !important;
+                    }
+                    #picNote{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .singleCard {
+
+        img{
+            width: 40%;
+            min-width: 40%;
+            max-width: 40%;
+        }
+        .cardDescr{
+            padding: 20px !important;
+            .cardText{
+                margin-top: 0px !important;
+                margin-bottom: 30px !important;
+            } 
+        }
+    }
+    #cardsContainer {
+        width: 100% !important;
+    }
+    .cardsIntro{
+        p.fontSize18{
+            font-size: 16px !important;
+        }
+    }
+
+}
+@media only screen and (max-width: 700px) {
+    section{
+        width: 88vw !important;
+        padding: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        &#valueSec{
+            padding: 0px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        &#career-highlights{
+            padding: 0px !important;
+            width: 100% !important;
+            li{
+                font-size: 14px;
+            }
+            p{
+                font-size: 16px !important;
+                &.textGold{
+                    font-size: 22px !important;
+                }
+            }
+        }
+        p{
+            text-align: left;
+            font-size: 16px !important;
+            span.textGold{
+                font-size: 22px !important;
+            }
+        }
+    }
+    #carouselSec{ 
+        margin-top: 0px !important;
+        padding: 20px !important;
+        width: 100%;
+        min-width: 330px;
+        max-width: 400px !important;
+        >div {
+            padding: 0px !important;
+            p{
+                text-align: left;
+                font-size: 16px !important;
+                span.textGold{
+                    font-size: 22px !important;
+                }
+            }
+        }
+
+        #carousel{
+            margin-top: 30px;
+            min-width: 370px !important;
+            max-width: 400px !important;
+            max-height: 400px;
+            min-height: 400px;
+            .singleCarouselSlide{
+                // width: 300px;
+                max-height: 400px;
+                min-height: 400px;
+                #timeline{
+    
+                    background-color:  #ffffff !important;
+                    padding-left: 0px;
+                    z-index: 15;
+                    #lineWhite{
+                        background-color: #ffffff !important;
+                    }
+                    #circleWhite{
+                        background-color: #ffffff !important;
+                    }
+                }
+                #slideDescription{
+                    width: 100%;
+                    min-width: 300px !important;
+                    max-height: 400px;
+                    min-height: 400px;
+                    background-color:  #00000047 !important;
+                    padding-left: 10px;
+                    z-index: 11;
+                    #slideText{
+                        background-color: #000000a3;
+                        padding: 10px !important;
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 45px !important;
+                    }
+                    #nextSlide{
+                        bottom: 2%;
+
+                    }
+                    #prevSlide{
+                        top: 2%;
+                    }
+                }
+                #slidePic{
+                    position: absolute;
+                    width: 100%;
+                    img{
+                        height: 400px !important;
+                    }
+                    #picNote{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .singleCard {
+        flex-direction: column;
+        &.reverse{
+            flex-direction: column !important;
+        }
+        img{
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+        }
+    }
+    .cardDescr{
+        padding: 0px !important;
+        .cardText{
+            margin-top: 0px !important;
+            margin-bottom: 30px !important;
+        } 
+    }
+    #cardsContainer {
+        width: 100% !important;
+    }
+    .cardsIntro{
+        p.fontSize18{
+            font-size: 16px !important;
+        }
+    }
+}

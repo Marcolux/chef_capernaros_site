@@ -1,0 +1,555 @@
+#carouselSec {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F5F5F5));
+  background: linear-gradient(#FFFFFF, #F5F5F5);
+}
+
+#valueSec {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#FFFFFF));
+  background: linear-gradient(#F5F5F5, #FFFFFF);
+}
+
+.carouselContainer {
+  width: 100%;
+  height: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carouselContainer #carousel {
+  width: 100%;
+  height: 80%;
+  max-width: 1500px;
+  min-width: 900px;
+  min-height: 480px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carouselContainer #carousel .singleCarouselSlide {
+  position: relative;
+  min-height: 480px;
+  max-height: 550px;
+  width: 90%;
+  -webkit-box-shadow: 6px 6px 6px #aeaeae;
+          box-shadow: 6px 6px 6px #aeaeae;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideDescription {
+  width: 40%;
+  min-height: 480px;
+  color: #FFFFFF;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideDescription i {
+  cursor: pointer;
+  font-size: 68px !important;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideDescription i:hover {
+  font-size: 65px !important;
+  text-shadow: 3px 0px 2px #b59b07;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideDescription i:active {
+  font-size: 68px !important;
+  text-shadow: 0px 0px 0px #b59b07;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideDescription #prevSlide {
+  position: absolute;
+  top: 10px;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideDescription #nextSlide {
+  position: absolute;
+  bottom: 10px;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slidePic {
+  width: 70%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slidePic p {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #f8f8f5;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slidePic #picNote {
+  text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px  1px 2px #000;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slidePic #picNote:not(.note_0) {
+  opacity: 0;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slidePic #picNote.darker {
+  opacity: 1 !important;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideImg {
+  height: 480px;
+  width: 0%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: center !important;
+     object-position: center !important;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.carouselContainer #carousel .singleCarouselSlide #slideText {
+  scale: 0;
+  -webkit-transition: scale 0.5s ease-in-out;
+  transition: scale 0.5s ease-in-out;
+}
+
+.carouselContainer #timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.carouselContainer #timeline #lineWhite {
+  position: absolute;
+  background-color: white;
+  width: 1px;
+  left: calc(50% + 20px);
+}
+
+.carouselContainer #timeline #circleWhite {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  left: calc(50% + 10px);
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.carouselContainer #timeline #circleWhite.position_0 {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+.carouselContainer #timeline #circleWhite:not(.circle_0).moveDown {
+  -webkit-transform: translateY(-1150%);
+          transform: translateY(-1150%);
+}
+
+.carouselContainer #timeline #circleWhite:not(.circle_5).moveUp {
+  -webkit-transform: translateY(1150%);
+          transform: translateY(1150%);
+}
+
+.cardsIntro {
+  width: 95%;
+  text-align: justify;
+}
+
+#cardsContainer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cardsContainer .singleCard {
+  width: 100%;
+  max-width: 1400px;
+}
+
+#cardsContainer .singleCard.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#cardsContainer .singleCard img {
+  width: 50%;
+  max-width: 400px;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 45%;
+     object-position: center 45%;
+  aspect-ratio: 1.1/1;
+}
+
+#cardsContainer .singleCard .cardDescr {
+  max-width: 550px;
+  text-align: justify;
+}
+
+.maxWidth1500 {
+  max-width: 1500px !important;
+}
+
+.highlights {
+  text-align: justify;
+  text-justify: newspaper;
+}
+
+.slidePic {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+section#career-highlights {
+  background-color: #2F2F2F;
+}
+
+section#career-highlights .highlights {
+  padding: 25px 25px 25px 25px;
+  list-style: none;
+}
+
+section#career-highlights .highlights ::marker {
+  color: #b59b07 !important;
+}
+
+section#career-highlights .highlights li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  color: #000;
+  border: 1px solid #2F2F2F;
+  background-color: #ffffff;
+  position: relative;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  z-index: 10;
+}
+
+section#career-highlights .highlights li::before {
+  content: '';
+  background-color: #b59b07;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: -10px;
+  bottom: 0px;
+  height: 100%;
+  width: 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+section#career-highlights .highlights li:hover {
+  z-index: 33;
+  font-weight: 600;
+}
+
+section#career-highlights .highlights li:hover::before {
+  z-index: -1;
+  width: 100%;
+  left: 0px;
+  background-color: #b59b07;
+}
+
+.animated-highlight {
+  color: #b59b07 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  #cardsContainer {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 930px) {
+  body {
+    width: 100% !important;
+    position: relative;
+  }
+  section {
+    width: 95% !important;
+    padding: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  section#valueSec {
+    padding: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    width: 100%;
+  }
+  section#career-highlights {
+    padding: 0px !important;
+    width: 100% !important;
+  }
+  section#career-highlights li {
+    font-size: 14px;
+  }
+  section#career-highlights p {
+    font-size: 16px !important;
+  }
+  section#career-highlights p.textGold {
+    font-size: 22px !important;
+  }
+  section p {
+    text-align: left;
+    font-size: 16px !important;
+  }
+  section p span.textGold {
+    font-size: 22px !important;
+  }
+  #carouselSec {
+    margin-top: 14vh !important;
+    padding: 20px !important;
+    width: 95% !important;
+  }
+  #carouselSec > div {
+    padding: 0px !important;
+  }
+  #carouselSec > div p {
+    text-align: left;
+    font-size: 16px !important;
+  }
+  #carouselSec > div p span.textGold {
+    font-size: 22px !important;
+  }
+  #carouselSec #carousel {
+    margin-top: 30px;
+    min-width: 95% !important;
+    max-height: 400px;
+    min-height: 400px;
+  }
+  #carouselSec #carousel .singleCarouselSlide {
+    max-height: 400px;
+    min-height: 400px;
+  }
+  #carouselSec #carousel .singleCarouselSlide #timeline {
+    background-color: #ffffff !important;
+    padding-left: 0px;
+    z-index: 15;
+  }
+  #carouselSec #carousel .singleCarouselSlide #timeline #lineWhite {
+    background-color: #ffffff !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #timeline #circleWhite {
+    background-color: #ffffff !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription {
+    width: 100%;
+    min-width: 300px !important;
+    max-height: 400px;
+    min-height: 400px;
+    background-color: #00000047 !important;
+    padding-left: 10px;
+    z-index: 11;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription #slideText {
+    background-color: #000000a3;
+    padding: 10px !important;
+    font-size: 14px;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription i {
+    font-size: 45px !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription #nextSlide {
+    bottom: 2%;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription #prevSlide {
+    top: 2%;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slidePic {
+    position: absolute;
+    width: 100%;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slidePic img {
+    height: 400px !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slidePic #picNote {
+    display: none;
+  }
+  .singleCard img {
+    width: 40%;
+    min-width: 40%;
+    max-width: 40%;
+  }
+  .singleCard .cardDescr {
+    padding: 20px !important;
+  }
+  .singleCard .cardDescr .cardText {
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+  }
+  #cardsContainer {
+    width: 100% !important;
+  }
+  .cardsIntro p.fontSize18 {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section {
+    width: 88vw !important;
+    padding: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  section#valueSec {
+    padding: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  section#career-highlights {
+    padding: 0px !important;
+    width: 100% !important;
+  }
+  section#career-highlights li {
+    font-size: 14px;
+  }
+  section#career-highlights p {
+    font-size: 16px !important;
+  }
+  section#career-highlights p.textGold {
+    font-size: 22px !important;
+  }
+  section p {
+    text-align: left;
+    font-size: 16px !important;
+  }
+  section p span.textGold {
+    font-size: 22px !important;
+  }
+  #carouselSec {
+    margin-top: 0px !important;
+    padding: 20px !important;
+    width: 100%;
+    min-width: 330px;
+    max-width: 400px !important;
+  }
+  #carouselSec > div {
+    padding: 0px !important;
+  }
+  #carouselSec > div p {
+    text-align: left;
+    font-size: 16px !important;
+  }
+  #carouselSec > div p span.textGold {
+    font-size: 22px !important;
+  }
+  #carouselSec #carousel {
+    margin-top: 30px;
+    min-width: 370px !important;
+    max-width: 400px !important;
+    max-height: 400px;
+    min-height: 400px;
+  }
+  #carouselSec #carousel .singleCarouselSlide {
+    max-height: 400px;
+    min-height: 400px;
+  }
+  #carouselSec #carousel .singleCarouselSlide #timeline {
+    background-color: #ffffff !important;
+    padding-left: 0px;
+    z-index: 15;
+  }
+  #carouselSec #carousel .singleCarouselSlide #timeline #lineWhite {
+    background-color: #ffffff !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #timeline #circleWhite {
+    background-color: #ffffff !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription {
+    width: 100%;
+    min-width: 300px !important;
+    max-height: 400px;
+    min-height: 400px;
+    background-color: #00000047 !important;
+    padding-left: 10px;
+    z-index: 11;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription #slideText {
+    background-color: #000000a3;
+    padding: 10px !important;
+    font-size: 14px;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription i {
+    font-size: 45px !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription #nextSlide {
+    bottom: 2%;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slideDescription #prevSlide {
+    top: 2%;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slidePic {
+    position: absolute;
+    width: 100%;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slidePic img {
+    height: 400px !important;
+  }
+  #carouselSec #carousel .singleCarouselSlide #slidePic #picNote {
+    display: none;
+  }
+  .singleCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .singleCard.reverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .singleCard img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .cardDescr {
+    padding: 0px !important;
+  }
+  .cardDescr .cardText {
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+  }
+  #cardsContainer {
+    width: 100% !important;
+  }
+  .cardsIntro p.fontSize18 {
+    font-size: 16px !important;
+  }
+}
+/*# sourceMappingURL=bio.css.map */
