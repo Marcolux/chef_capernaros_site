@@ -40,6 +40,14 @@ $primaryColor: #897400;
 					}
 				}
 			}
+			#logoNavIndexPage{
+				img{
+					height: 6vh !important;
+					&:hover{
+						filter: drop-shadow(1px 1px 1px #0000007c) !important;
+					}
+				}
+			}
 		}
 	}
 

@@ -67,19 +67,19 @@ function initCarousel() {
     const slide1 = {
         description: 'Born and raised in Piraeus, Greece, Chef Nikolaos Kapernaros began his career studying at the Greek Culinary Institute &amp; working on islands such as Rhodes, Kos and Crete.',
         leftBG: '#000B4C',
-        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495614/Niko/Rectangle_55_rwurxu.png',
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495614/Niko/Rectangle_55_rwurxu.webp',
         picNote: 'Piraeus, Attica'
     }
     const slide2 = {
         description: 'Grand Resort Lagonissi, Greece, a private peninsula Luxury Resort and member of Leading Hotels of the World.  There, he worked his way up to being the Head Chef for royalty, international athletes, movie stars &amp; musicians during their stay at the resort.',
         leftBG: '#262626',
-        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495915/Niko/Rectangle_54_lltm3q.png',
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495915/Niko/Rectangle_54_lltm3q.webp',
         picNote: 'Lagonissi, Attica'
     }
     const slide3 = {
         description: 'In 2011, Chef Kapernaros began teaching at the Culinary Institute of Greece, Anavissos, showcasing the cooking styles of Greek, French, Mediterranean and international cuisines. Chef Kapernaros and team worked closely with the Greek Government and the Council of the European Union on exhibitions featuring Greek cuisine and environmental sustainability.',
         leftBG: '#000000',
-        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495906/Niko/Rectangle_52_xrwyz8.png',
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495906/Niko/Rectangle_52_xrwyz8.webp',
         picNote: 'Culinary Institute of Greece, Anavissos, Attica'
     }
     const slide4 = {
@@ -91,7 +91,7 @@ function initCarousel() {
     const slide5 = {
         description: 'In June 2018, Chef Niko began carving a new path in the Windy City as Chef de Cuisine at the Hyatt Regency Chicago.',
         leftBG: '#262626',
-        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1712191409/Niko/Untitled_design_14_hjsup9.png',
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1712191409/Niko/Untitled_design_14_hjsup9.webp',
         picNote: 'Hyatt Regency Chicago'
     }
     const slide6 = {

@@ -35,6 +35,15 @@ html, body {
           filter: drop-shadow(1px 1px 1px #0000007c) !important;
 }
 
+.navBar.scrolled.biggerScreen #logoNavIndexPage img {
+  height: 6vh !important;
+}
+
+.navBar.scrolled.biggerScreen #logoNavIndexPage img:hover {
+  -webkit-filter: drop-shadow(1px 1px 1px #0000007c) !important;
+          filter: drop-shadow(1px 1px 1px #0000007c) !important;
+}
+
 .navBar.mobileView {
   max-width: 50px;
   width: 100vw;
