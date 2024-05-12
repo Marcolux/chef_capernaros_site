@@ -85,7 +85,7 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
                         <i class="fa-solid fa-chevron-left fontSize40"></i>
                     </button>
                     <div class="flex flex-justifyContent-center flex-alignItems-center picDiv" >
-                        <img class="picToEn" src="${picture.src}">
+                        <img class="picToEn" src="${picture.src}" alt="Media Picture">
                     </div>
                     <button class="p-20" id="nextPicture">
                         <i class="fa-solid fa-chevron-right fontSize40"></i>
@@ -99,7 +99,7 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
                         <i class="fa-solid fa-chevron-left fontSize40"></i>
                     </button>
                     <div class="flex flex-justifyContent-center flex-alignItems-center picDiv" >
-                        <img class="picToEn" src="${picture.src}">
+                        <img class="picToEn" src="${picture.src}" alt="Media Picture">
                     </div>
 
                     <div class="p-20 emptyBox"></div>
@@ -111,8 +111,8 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
                 <div id="picShowing" class="flex flex-alignItems-center">
                     <div class="p-20 emptyBox"></div>
 
-                    <div class="flex flex-justifyContent-center flex-alignItems-center  picDiv" >
-                        <img class="picToEn" src="${picture.src}">
+                    <div class="flex flex-justifyContent-center flex-alignItems-center picDiv" >
+                        <img class="picToEn" src="${picture.src}"  alt="Media Picture">
                     </div>
                     <button class="p-20" id="nextPicture">
                         <i class="fa-solid fa-chevron-right fontSize40"></i>
