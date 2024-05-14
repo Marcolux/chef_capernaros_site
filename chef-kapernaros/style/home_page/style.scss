@@ -912,14 +912,16 @@ $primaryColorLight: #00000090;
 		font-size: 20px !important;
 	}
 	footer{
+		padding-bottom: 80px !important;
 		#webcraftLink{
-			font-size: 13px !important;
 			a{
+				font-size: 12px !important;
 				text-align: start;
 			}
 		}
 		img{
 			align-self: baseline;
+			height: 11vh;
 		}
 	}
 
