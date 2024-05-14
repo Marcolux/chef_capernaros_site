@@ -5,7 +5,7 @@ html, body {
 
 .navBar {
   background-color: #ffffff00;
-  font: normal normal 500 17px "Prata";
+  font: normal normal 500 17px "Merriweather";
   color: #000;
 }
 
@@ -35,6 +35,11 @@ html, body {
           filter: drop-shadow(1px 1px 1px #0000007c) !important;
 }
 
+.navBar.scrolled.biggerScreen .logoNav img.activePage {
+  -webkit-filter: drop-shadow(1px 1px 1px #897400) !important;
+          filter: drop-shadow(1px 1px 1px #897400) !important;
+}
+
 .navBar.scrolled.biggerScreen #logoNavIndexPage img {
   height: 6vh !important;
 }
@@ -42,6 +47,11 @@ html, body {
 .navBar.scrolled.biggerScreen #logoNavIndexPage img:hover {
   -webkit-filter: drop-shadow(1px 1px 1px #0000007c) !important;
           filter: drop-shadow(1px 1px 1px #0000007c) !important;
+}
+
+.navBar.scrolled.biggerScreen #logoNavIndexPage img.activePage {
+  -webkit-filter: drop-shadow(1px 1px 1px #00000090) !important;
+          filter: drop-shadow(1px 1px 1px #00000090) !important;
 }
 
 .navBar.mobileView {
@@ -241,8 +251,8 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   z-index: 9999;
 }
 
@@ -272,8 +282,20 @@ html, body {
 }
 
 .navBar.biggerScreen #navBgScn img:hover {
-  -webkit-filter: drop-shadow(1px 1px 1px #0000007c) !important;
-          filter: drop-shadow(1px 1px 1px #0000007c) !important;
+  -webkit-filter: drop-shadow(1px 1px 1px #0000007c);
+          filter: drop-shadow(1px 1px 1px #0000007c);
+  cursor: pointer;
+}
+
+.navBar.biggerScreen #navBgScn img.activePage {
+  -webkit-filter: drop-shadow(5px 5px 5px #00000090);
+          filter: drop-shadow(5px 5px 5px #00000090);
+}
+
+.navBar.biggerScreen #navBgScn img.activePage:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #00000090);
+          filter: drop-shadow(5px 5px 5px #00000090);
+  cursor: auto;
 }
 
 .navBar.biggerScreen #navBgScn .linkContainer {
@@ -604,7 +626,7 @@ html, body {
 .titlesChef {
   color: #001489;
   text-align: justify;
-  font: normal normal 500 17px "Prata";
+  font: normal normal 500 17px "Merriweather";
   font-size: 27px;
   line-height: normal;
   position: relative;
@@ -666,122 +688,6 @@ html, body {
 .btnPrimary a {
   text-decoration: none;
   color: #897400;
-}
-
-.comingSoonCont {
-  background-color: #ffffffb4;
-  border: 1px solid #0000004a;
-  border-radius: 8px;
-  -webkit-box-shadow: inset 5px 5px 6px #00000030, inset -5px -5px 6px #00000030, 3px 3px 6px #00000050, -3px -3px 6px #00000030, 3px -3px 3px #00000030, -3px 3px 3px #00000030;
-          box-shadow: inset 5px 5px 6px #00000030, inset -5px -5px 6px #00000030, 3px 3px 6px #00000050, -3px -3px 6px #00000030, 3px -3px 3px #00000030, -3px 3px 3px #00000030;
-  /* bottom-right outer shadow */
-  /* Delay the animation of each letter */
-}
-
-.comingSoonCont .comingSoon {
-  font-size: 50px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: 'Ledger';
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.comingSoonCont .comingSoon span {
-  opacity: 0.9;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-animation: dropIn 10s infinite;
-          animation: dropIn 10s infinite;
-  color: #000000d7;
-  margin-left: -3px;
-}
-
-@-webkit-keyframes dropIn {
-  0%, 50%, 100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    -webkit-filter: blur(0.2px);
-            filter: blur(0.2px);
-    opacity: 0.9;
-  }
-  25%, 75% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-}
-
-@keyframes dropIn {
-  0%, 50%, 100% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    -webkit-filter: blur(0.2px);
-            filter: blur(0.2px);
-    opacity: 0.9;
-  }
-  25%, 75% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-}
-
-.comingSoonCont .comingSoon span:nth-child(1) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(2) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(3) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(4) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(5) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(6) {
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(7) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(8) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(9) {
-  -webkit-animation-delay: 1.1s;
-          animation-delay: 1.1s;
-}
-
-.comingSoonCont .comingSoon span:nth-child(10) {
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
 }
 
 @media only screen and (min-width: 1301px) and (max-width: 1400px) {
@@ -856,6 +762,15 @@ html, body {
   }
   .chefQuote .fontSize58 {
     font-size: 40px !important;
+  }
+  .middlePic > div {
+    width: 70% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .middlePic > div img {
+    width: 30% !important;
   }
   .achievementLanding {
     -webkit-box-align: start;
@@ -1038,6 +953,19 @@ html, body {
   .landingPage p span {
     font-size: 28px !important;
   }
+  .middlePic > div {
+    width: 90% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .middlePic > div img {
+    width: 32% !important;
+    aspect-ratio: 1.1 / 1;
+  }
+  .middlePic > div img.mr-20 {
+    margin-right: 10px !important;
+  }
   .bioLanding {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1146,7 +1074,7 @@ html, body {
   }
   .achievementLanding .allAchvmText p:not(.titlesChef) {
     margin-top: 0px !important;
-    margin-bottom: 25px !important;
+    margin-bottom: 10px !important;
   }
   .achievementLanding .allAchvmText .card-1Div {
     width: 100% !important;
@@ -1158,6 +1086,20 @@ html, body {
   }
   .achievementLanding .allAchvmText .card-1Div #card-1 {
     margin-top: 15px !important;
+    font-size: 17px !important;
+    text-align: left !important;
+  }
+  .achievementLanding .allAchvmText #card-2 {
+    font-size: 24px !important;
+  }
+  .achievementLanding .allAchvmText #card-3 {
+    font-size: 20px !important;
+  }
+  .achievementLanding .allAchvmText #card-4 {
+    font-size: 18px !important;
+  }
+  .achievementLanding .allAchvmText #card-5 {
+    font-size: 20px !important;
   }
   .achievementLanding .allAchvmText .achCards {
     max-width: 80% !important;
@@ -1173,6 +1115,44 @@ html, body {
   .titlesChef {
     font-size: 20px !important;
   }
+  footer #webcraftLink {
+    font-size: 13px !important;
+  }
+  footer #webcraftLink a {
+    text-align: start;
+  }
+  footer img {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+}
+
+footer {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer #webcraftLink {
+  position: absolute;
+  bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer #webcraftLink a {
+  text-align: center;
 }
 
 .currentTitle {
