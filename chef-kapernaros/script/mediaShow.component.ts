@@ -183,13 +183,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const charityEventsList = new picCollection('charityEventsList')
     const competitionShows = new picCollection('competitionShows')
     const onThePass = new picCollection('onThePass')
+    const chicagoChefsCookbookLaunch = new picCollection('chicagoChefsCookbookLaunch')
 
     const allLists: picCollection[] = [
         friendsCelebList,
         growingInGreeceList,
         charityEventsList,
         competitionShows,
-        onThePass
+        onThePass,
+        chicagoChefsCookbookLaunch
     ]
 
     const friendsCelebList_src = [
@@ -325,7 +327,32 @@ document.addEventListener('DOMContentLoaded', function() {
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620784/Niko/on%20the%20pass/o_t_p_13_bs7c0y.webp"},
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620795/Niko/on%20the%20pass/o_t_p_14_f2im1y.webp"},
     ]
-    const allSources = [friendsCelebList_src, growingInGreeceList_src, charityEventsList_src, competitionShows_src, onThePass_src]
+    const chicagoChefsCookbookLaunch_src = [
+        {src:"chicagoChefsCookbookLaunch"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716400/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-12-036_v6lv8n.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716400/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-12-160_cbwj6s.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716399/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-11-746_azbrgv.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716399/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-11-840_xj1yho.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716398/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-11-509_gdy0cm.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716397/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-11-406_d4ezzg.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716397/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-11-295_kbnkgq.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716397/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-11-207_utomno.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716397/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-901_mdhyzl.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716397/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-11-012_qi5ivs.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716396/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-784_bgcbkn.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716395/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-653_yn8azw.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716395/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-755_xggfj7.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716395/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-416_mg8jee.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716395/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-571_rckmzn.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716394/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-198_g5wqmi.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716394/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-315_ccwxlp.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716394/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-241_gtfeha.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716394/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-10-270_edhi42.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716394/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-09-888_arbo5h.jpg"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715716394/Niko/Chicago%20Chefs%20Cookbook%20Launch/viber_image_2024-05-13_20-48-09-943_moyknm.jpg"},
+
+    ]
+    const allSources = [friendsCelebList_src, growingInGreeceList_src, charityEventsList_src, competitionShows_src, onThePass_src, chicagoChefsCookbookLaunch_src]
 
     let allNotActiveTi = document.querySelectorAll('.secTitles') as NodeListOf<HTMLLIElement>
     allNotActiveTi.forEach( listEl => {
