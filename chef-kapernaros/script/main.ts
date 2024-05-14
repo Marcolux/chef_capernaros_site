@@ -120,4 +120,11 @@ document.getElementById('myForm')?.addEventListener('submit', function(event) {
     })
 })
 
+// // Setting a cookie with SameSite=None and Secure attributes
+// document.cookie = "key=value; SameSite=None; Secure";
+
+// Setting a cookie with SameSite=Lax
+document.cookie = "key=value; SameSite=Lax";
+
+
 console.log('all the time 4 try')

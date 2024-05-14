@@ -347,7 +347,7 @@ html, body {
 }
 
 .landingPage {
-  background-image: url("https://res.cloudinary.com/drdrs6pdq/image/upload/v1709553929/Niko/Home_Page_Chef_Kapernaros_img_HQ_1_q0nf2f.png");
+  background-image: url("https://res.cloudinary.com/drdrs6pdq/image/upload/v1709553929/Niko/Home_Page_Chef_Kapernaros_img_HQ_1_q0nf2f.webp");
   background-size: cover;
   background-position: right;
   height: 100%;
@@ -580,6 +580,9 @@ html, body {
   scale: 0;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .achievementLanding .allAchvmText .achCards#card-1 {
@@ -690,7 +693,7 @@ html, body {
   color: #897400;
 }
 
-@media only screen and (min-width: 1301px) and (max-width: 1400px) {
+@media only screen and (min-width: 1368px) and (max-width: 1400px) {
   .chefQuote {
     width: 60%;
   }
@@ -728,16 +731,21 @@ html, body {
   }
 }
 
-@media only screen and (max-width: 1361px) {
+@media only screen and (max-width: 1367px) {
   .achievementLanding .btnPrimary {
     position: absolute;
     bottom: 30px;
+    left: 20px;
+  }
+  .achievementLanding .imgAchvm img {
+    height: 97% !important;
   }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 930px) {
+@media only screen and (min-width: 771px) and (max-width: 1050px) {
   .chefQuote {
-    width: 80% !important;
+    width: 92% !important;
+    background-color: #ffffff69;
   }
   .chefQuote p {
     font-size: 40px !important;
@@ -748,9 +756,50 @@ html, body {
   .chefQuote .fontSize58 {
     font-size: 40px !important;
   }
+  .signature {
+    width: 100% !important;
+    background-color: #ffffff69;
+    margin-top: 0px !important;
+  }
+  .achievementLanding {
+    min-height: 780px;
+  }
+  .allAchvmText {
+    width: 100% !important;
+  }
+  .allAchvmText .btnPrimary {
+    position: absolute;
+    bottom: -30px !important;
+  }
+  .card45Cont {
+    width: 90vw;
+    position: absolute;
+  }
+  .card45Cont > div {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .card45Cont #card-4 {
+    max-width: 350px !important;
+  }
+  .imgAchvm {
+    width: 0px !important;
+  }
+  .cardsLine {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    width: 100% !important;
+  }
+  .cardsLine.cards23Cont {
+    width: 90vw !important;
+  }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 1300px) {
+@media only screen and (min-width: 771px) and (max-width: 1300px) {
   .chefQuote {
     width: 60%;
   }
@@ -789,12 +838,6 @@ html, body {
     height: fit-content;
   }
   .achievementLanding .allAchvmText .cardsLine {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
     width: 100% !important;
   }
   .achievementLanding .allAchvmText .cardsLine .btnWrap {
@@ -805,6 +848,7 @@ html, body {
   }
   .achievementLanding .allAchvmText .cardsLine .btnWrap .btnPrimary {
     position: relative !important;
+    bottom: 0px !important;
   }
   .achievementLanding .allAchvmText #chef-corps-logo {
     max-width: 200px !important;
@@ -816,12 +860,14 @@ html, body {
     margin-bottom: 25px !important;
   }
   .achievementLanding .allAchvmText .achCards {
-    max-width: 80% !important;
     width: 100% !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     text-align: center;
   }
   .achievementLanding .allAchvmText .achCards.in-view#card-2, .achievementLanding .allAchvmText .achCards.in-view#card-4 {
-    margin-left: 50%;
+    margin-left: 10px;
   }
   .achievementLanding .imgAchvm {
     display: -webkit-box;
@@ -911,25 +957,10 @@ html, body {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
   .landingPage {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    padding: 0px 20px !important;
+    padding: 0px 0px !important;
     background-position-x: 87.5%;
-  }
-  .landingPage .comingSoonCont {
-    width: 100% !important;
-    padding-left: 0px;
-    margin-top: 20px;
-  }
-  .landingPage .comingSoonCont .comingSoon {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .landingPage .comingSoonCont .comingSoon span {
-    font-size: 40px !important;
   }
   .landingPage .signature {
     width: 100% !important;
@@ -946,6 +977,9 @@ html, body {
   }
   .landingPage i {
     font-size: 20px !important;
+  }
+  .landingPage .dwnLine {
+    margin: 0px !important;
   }
   .landingPage p {
     font-size: 25px !important;
@@ -1108,6 +1142,222 @@ html, body {
   }
   .achievementLanding .allAchvmText .achCards.in-view {
     margin-left: 0% !important;
+  }
+  .achievementLanding .allAchvmText .btnPrimary {
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .achievementLanding .imgAchvm {
+    display: none;
+  }
+  .titlesChef {
+    font-size: 20px !important;
+  }
+  footer {
+    padding-bottom: 80px !important;
+  }
+  footer #webcraftLink a {
+    font-size: 12px !important;
+    text-align: start;
+  }
+  footer img {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    height: 11vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .landingPage {
+    padding: 0px 0px !important;
+    background-position-x: 87.5%;
+  }
+  .landingPage .signature {
+    width: 100% !important;
+    background-color: #ffffff69 !important;
+    margin-top: 0px !important;
+  }
+  .landingPage .signature img {
+    width: 70%;
+  }
+  .landingPage .chefQuote {
+    width: 100% !important;
+    padding: 20px 0px !important;
+    background-color: #ffffff69 !important;
+  }
+  .landingPage i {
+    font-size: 20px !important;
+  }
+  .landingPage .dwnLine {
+    margin: 0px !important;
+  }
+  .landingPage p {
+    font-size: 25px !important;
+  }
+  .landingPage p span {
+    font-size: 28px !important;
+  }
+  .middlePic > div {
+    width: 90% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .middlePic > div img {
+    width: 32% !important;
+    aspect-ratio: 1.1 / 1;
+  }
+  .middlePic > div img.mr-20 {
+    margin-right: 10px !important;
+  }
+  .bioLanding {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    width: 100%;
+  }
+  .bioLanding .bioLandingPicContainer {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .bioLanding .bioLandingPicContainer img {
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    width: 24%;
+  }
+  .bioLanding .bioLandingTextContainer {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .bioLanding .bioLandingTextContainer .textBioLanding {
+    padding-right: 0px !important;
+  }
+  .charityLanding {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    width: 100%;
+  }
+  .charityLanding .charityLandingPicContainer {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .charityLanding .charityLandingPicContainer img {
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    width: 24%;
+  }
+  .charityLanding .charityLandingTextContainer {
+    width: 90%;
+    margin-bottom: 30px;
+    padding-left: 0px !important;
+  }
+  .charityLanding .charityLandingTextContainer .textCharityLanding {
+    padding-right: 0px !important;
+  }
+  .achievementLanding {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+  .achievementLanding .allAchvmText {
+    width: 90%;
+    padding: 0px !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .achievementLanding .allAchvmText .cardsLine {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    width: 100% !important;
+  }
+  .achievementLanding .allAchvmText .cardsLine .btnWrap {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    margin-top: 30px;
+  }
+  .achievementLanding .allAchvmText .cardsLine .btnWrap .btnPrimary {
+    position: relative !important;
+  }
+  .achievementLanding .allAchvmText #chef-corps-logo {
+    max-width: 120px !important;
+    right: 15px !important;
+    top: -15px !important;
+  }
+  .achievementLanding .allAchvmText p:not(.titlesChef) {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+  }
+  .achievementLanding .allAchvmText .card-1Div {
+    width: 100% !important;
+    margin-left: 0%;
+    margin-top: 20px !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .achievementLanding .allAchvmText .card-1Div #card-1 {
+    margin-top: 15px !important;
+    font-size: 17px !important;
+    text-align: left !important;
+  }
+  .achievementLanding .allAchvmText #card-2 {
+    font-size: 24px !important;
+  }
+  .achievementLanding .allAchvmText #card-3 {
+    font-size: 20px !important;
+  }
+  .achievementLanding .allAchvmText #card-4 {
+    font-size: 18px !important;
+  }
+  .achievementLanding .allAchvmText #card-5 {
+    font-size: 20px !important;
+  }
+  .achievementLanding .allAchvmText .achCards {
+    max-width: 80% !important;
+    width: 80% !important;
+    text-align: center;
+  }
+  .achievementLanding .allAchvmText .achCards.in-view {
+    margin-left: 0% !important;
+  }
+  .achievementLanding .allAchvmText .btnPrimary {
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 20px;
   }
   .achievementLanding .imgAchvm {
     display: none;

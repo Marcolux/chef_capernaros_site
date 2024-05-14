@@ -280,7 +280,7 @@ $primaryColorLight: #00000090;
 
 // LANDING PAGE ========
 .landingPage{
-    background-image: url('https://res.cloudinary.com/drdrs6pdq/image/upload/v1709553929/Niko/Home_Page_Chef_Kapernaros_img_HQ_1_q0nf2f.png');
+    background-image: url('https://res.cloudinary.com/drdrs6pdq/image/upload/v1709553929/Niko/Home_Page_Chef_Kapernaros_img_HQ_1_q0nf2f.webp');
     background-size: cover;
     background-position: right;
     height: 100%;
@@ -460,6 +460,7 @@ $primaryColorLight: #00000090;
 			transform: translatex(100%);
 			scale: 0;
 			transition: all 0.6s ease;
+			height: fit-content;
 
 			&#card-1{
 				transition-delay: 0s;
@@ -543,7 +544,7 @@ $primaryColorLight: #00000090;
 }
 
 // Break Points 
-@media only screen and (min-width: 1301px) and (max-width: 1400px) {
+@media only screen and (min-width: 1368px) and (max-width: 1400px) {
 	.chefQuote{
 		width: 60%;
 	}
@@ -587,18 +588,26 @@ $primaryColorLight: #00000090;
 		}
 	}
 }
-@media only screen and (max-width: 1361px) {
+@media only screen and (max-width: 1367px) {
 	.achievementLanding {
 		.btnPrimary{
 			position: absolute;
 			bottom: 30px;
+			left: 20px;
 		}
-	} 
+		.imgAchvm img {
+			height: 97% !important;
+
+		}
+	}
+
 }
-@media only screen and (min-width: 701px) and (max-width: 930px) {
+@media only screen and (min-width: 771px) and (max-width: 1050px)  {
+
 
 	.chefQuote{
-		width: 80% !important;
+		width: 92% !important;
+		background-color: #ffffff69;
 		p{
 			font-size: 40px !important;
 		}
@@ -609,8 +618,45 @@ $primaryColorLight: #00000090;
 			font-size: 40px !important;
 		}
 	}
+	.signature{
+		width: 100% !important;
+		background-color: #ffffff69;
+		margin-top: 0px !important;
+	}
+	.achievementLanding{
+		min-height: 780px;
+
+	} 
+	.allAchvmText {
+		width: 100% !important;
+		.btnPrimary{
+			position: absolute;
+			bottom: -30px !important;
+		}
+	}
+	.card45Cont{
+		width: 90vw;
+		position: absolute;
+		>div{
+			justify-content: center !important;
+		}
+		#card-4{
+			max-width: 350px !important;
+		}
+	}
+	.imgAchvm {
+		width: 0px !important;
+	}
+	.cardsLine{
+		flex-wrap: nowrap;
+		justify-content: flex-start !important;
+		width: 100% !important;
+		&.cards23Cont{
+			width: 90vw !important;
+		}
+	}
 }
-@media only screen and (min-width: 701px) and (max-width: 1300px) {
+@media only screen and (min-width: 771px) and (max-width: 1300px) {
 	
 	.chefQuote{
 		width: 60%;
@@ -644,14 +690,14 @@ $primaryColorLight: #00000090;
 			padding: 0px !important;
 			height: fit-content;
 			.cardsLine{
-				flex-wrap: wrap;
-				flex-direction: column-reverse !important;
+				// flex-wrap: wrap;
 				width: 100% !important;
 				.btnWrap{
 					height: fit-content !important;
 					margin-top: 30px;
 					.btnPrimary{
 						position: relative !important;
+						bottom: 0px !important;
 					}
 				}
 			}
@@ -665,13 +711,13 @@ $primaryColorLight: #00000090;
 				margin-bottom: 25px !important;		
 			}
 			.achCards{
-				max-width: 80% !important;
 				width: 100% !important;
+				height: fit-content;
 				text-align: center;
 	
 				&.in-view{
 					&#card-2, &#card-4{
-						margin-left: 50%;
+						margin-left:10px;
 					}
 				}
 			}
@@ -741,22 +787,9 @@ $primaryColorLight: #00000090;
 		} 
 	}
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px){
 	.landingPage{
-		justify-content: center !important;
-		padding: 0px 20px !important;
-		.comingSoonCont{
-			width: 100% !important;
-			padding-left: 0px;
-			margin-top: 20px;
-			.comingSoon{
-				padding-left: 10px;
-				padding-right: 10px;
-				span{
-					font-size: 40px !important;
-				}
-			}
-		}
+		padding: 0px 0px !important;
 		background-position-x: 87.5%;
 		.signature{
 			width: 100% !important;
@@ -772,6 +805,9 @@ $primaryColorLight: #00000090;
 			background-color: #ffffff69 !important;
 		}
 		i{ font-size: 20px !important; }
+		.dwnLine {
+			margin: 0px !important;
+		}
 		p{
 			font-size: 25px !important;
 			span{ font-size: 28px !important}
@@ -902,6 +938,191 @@ $primaryColorLight: #00000090;
 				&.in-view{
 					margin-left: 0% !important;
 				}
+			}
+			.btnPrimary{
+				position: relative;
+				bottom: 0px;
+				margin-bottom: 20px;
+			}
+		}
+		.imgAchvm{
+			display: none;
+		}
+	}
+	.titlesChef{
+		font-size: 20px !important;
+	}
+	footer{
+		padding-bottom: 80px !important;
+		#webcraftLink{
+			a{
+				font-size: 12px !important;
+				text-align: start;
+			}
+		}
+		img{
+			align-self: baseline;
+			height: 11vh;
+		}
+	}
+
+}
+@media only screen and (max-height: 400px){
+	.landingPage{
+		padding: 0px 0px !important;
+		background-position-x: 87.5%;
+		.signature{
+			width: 100% !important;
+			img{
+				width: 70%;
+			}
+			background-color: #ffffff69 !important;
+			margin-top: 0px !important;
+		}
+		.chefQuote{
+			width: 100% !important;
+			padding: 20px 0px !important;
+			background-color: #ffffff69 !important;
+		}
+		i{ font-size: 20px !important; }
+		.dwnLine {
+			margin: 0px !important;
+		}
+		p{
+			font-size: 25px !important;
+			span{ font-size: 28px !important}
+		}
+	}
+
+	.middlePic{
+		>div{
+			width: 90% !important;
+			justify-content: center;
+			img{
+				width: 32% !important;
+				aspect-ratio: 1.1 / 1;
+				&.mr-20{
+					margin-right: 10px !important;
+				}
+			}
+		}
+	}
+	.bioLanding{
+		flex-direction: column-reverse;
+		height: fit-content !important;
+		width: 100%;
+		.bioLandingPicContainer{
+			width: 95%;
+			display: flex;
+			justify-content: space-around;
+			img{
+				position: relative !important;
+				top: 0px !important;
+				left: 0px !important;
+				transform: translateX(0px);
+				width: 24%;
+			}
+	
+		}
+		.bioLandingTextContainer{
+			width: 90%;
+			margin-bottom: 30px;
+			.textBioLanding{
+				padding-right: 0px !important;
+			}
+		} 
+	}
+	.charityLanding{
+		flex-direction: column-reverse;
+		height: fit-content !important;
+		width: 100%;
+		.charityLandingPicContainer{
+			width: 95%;
+			display: flex;
+			justify-content: space-around;
+			img{
+				position: relative !important;
+				top: 0px !important;
+				left: 0px !important;
+				transform: translateX(0px);
+				width: 24%;
+			}
+	
+		}
+		.charityLandingTextContainer{
+			width: 90%;
+			margin-bottom: 30px;
+			padding-left: 0px !important;
+			.textCharityLanding{
+				padding-right: 0px !important;
+			}
+		} 
+	}
+	.achievementLanding{
+		align-items: start;
+		height: fit-content;
+		width: 100%;
+
+		.allAchvmText{
+			width: 90%;
+			padding: 0px !important;
+			height: fit-content;
+			.cardsLine{
+				flex-wrap: wrap;
+				flex-direction: column-reverse !important;
+				width: 100% !important;
+				.btnWrap{
+					height: fit-content !important;
+					margin-top: 30px;
+					.btnPrimary{
+						position: relative !important;
+					}
+				}
+			}
+			#chef-corps-logo{
+				max-width: 120px !important;
+				right: 15px !important;
+				top: -15px !important;
+			}
+			p:not(.titlesChef){
+				margin-top: 0px !important;		
+				margin-bottom: 10px !important;		
+			}
+			.card-1Div{
+				width: 100% !important;
+				margin-left: 0%;
+				margin-top: 20px !important;
+				justify-content: start !important;
+				#card-1{
+					margin-top: 15px !important;
+					font-size: 17px !important;
+					text-align: left !important;
+				}
+			}
+			#card-2{
+				font-size: 24px !important;
+			}
+			#card-3{
+				font-size: 20px !important;
+			}
+			#card-4{
+				font-size: 18px !important;
+			}
+			#card-5{
+				font-size: 20px !important;
+			}
+			.achCards{
+				max-width: 80% !important;
+				width: 80% !important;
+				text-align: center;
+				&.in-view{
+					margin-left: 0% !important;
+				}
+			}
+			.btnPrimary{
+				position: relative;
+				bottom: 0px;
+				margin-bottom: 20px;
 			}
 		}
 		.imgAchvm{
