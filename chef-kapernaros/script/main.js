@@ -62,11 +62,22 @@ var picAnimation = function () {
         }
     });
     document.querySelectorAll('.achCards').forEach(function (img) {
-        if (window.pageYOffset > 1250) {
-            img.classList.add('in-view');
+        console.log(window.pageYOffset);
+        if (window.innerWidth < 770) {
+            if (window.pageYOffset > 1000) {
+                img.classList.add('in-view');
+            }
+            else if (window.pageYOffset < 950) {
+                img.classList.remove('in-view');
+            }
         }
-        else if (window.pageYOffset < 1150) {
-            img.classList.remove('in-view');
+        else {
+            if (window.pageYOffset > 1250) {
+                img.classList.add('in-view');
+            }
+            else if (window.pageYOffset < 1150) {
+                img.classList.remove('in-view');
+            }
         }
     });
     document.querySelectorAll('.charityLandingPicContainer img').forEach(function (img) {

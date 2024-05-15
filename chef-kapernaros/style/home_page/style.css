@@ -575,8 +575,8 @@ html, body {
           box-shadow: 6px 6px 6px #00000059;
   padding: 25px 25px;
   margin-top: 0px;
-  -webkit-transform: translatex(100%);
-          transform: translatex(100%);
+  -webkit-transform: translatex(-300px);
+          transform: translatex(-300px);
   scale: 0;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -592,23 +592,23 @@ html, body {
 }
 
 .achievementLanding .allAchvmText .achCards#card-2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.achievementLanding .allAchvmText .achCards#card-3 {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-.achievementLanding .allAchvmText .achCards#card-3 {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-}
-
 .achievementLanding .allAchvmText .achCards#card-4 {
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .achievementLanding .allAchvmText .achCards#card-5 {
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .achievementLanding .allAchvmText .achCards.in-view {
@@ -1139,6 +1139,9 @@ html, body {
     max-width: 80% !important;
     width: 80% !important;
     text-align: center;
+    -webkit-transform: translatex(-130%);
+            transform: translatex(-130%);
+    scale: 1 !important;
   }
   .achievementLanding .allAchvmText .achCards.in-view {
     margin-left: 0% !important;
@@ -1147,6 +1150,7 @@ html, body {
     position: relative;
     bottom: 0px;
     margin-bottom: 20px;
+    margin-left: -20px;
   }
   .achievementLanding .imgAchvm {
     display: none;
