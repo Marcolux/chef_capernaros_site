@@ -128,6 +128,10 @@ $gold: #b59b07;
             .picDescr:not(.noBG){
                 display: none;
             }
+            &:hover{
+                scale: 1;
+                z-index:1;
+            } 
 
         }
     }

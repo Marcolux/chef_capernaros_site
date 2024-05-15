@@ -135,5 +135,9 @@
   #tablePicContainer .singlePicTable .picDescr:not(.noBG) {
     display: none;
   }
+  #tablePicContainer .singlePicTable:hover {
+    scale: 1;
+    z-index: 1;
+  }
 }
 /*# sourceMappingURL=chef_table.css.map */
