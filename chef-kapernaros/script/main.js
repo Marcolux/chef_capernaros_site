@@ -62,7 +62,6 @@ var picAnimation = function () {
         }
     });
     document.querySelectorAll('.achCards').forEach(function (img) {
-        console.log(window.pageYOffset);
         if (window.innerWidth < 770) {
             if (window.pageYOffset > 1000) {
                 img.classList.add('in-view');
@@ -102,7 +101,7 @@ var allNotActiveTitles = document.querySelectorAll('.secTitles');
 allNotActiveTitles.forEach(function (listEl) {
     listEl.addEventListener('click', function () {
         allNotActiveTitles = document.querySelectorAll('.secTitles');
-        console.log(listEl);
+        // console.log(listEl)
         if (!listEl.classList.contains('active')) {
             var titleActive = __spreadArray([], allNotActiveTitles, true).filter(function (el) { return el.classList.contains('active'); })[0];
             titleActive.classList.remove('active');
@@ -125,6 +124,21 @@ var inputText = document.querySelectorAll('.inputText');
     }, function (error) {
         console.log('FAILED...', error);
         alert("Failed to send email.");
+    });
+});
+var allChefPic = document.querySelectorAll('.singlePicTable');
+allChefPic.forEach(function (el) {
+    el.addEventListener('touchstart', function () {
+        if (!document.fullscreenElement) {
+            el.requestFullscreen()
+                .then(function () { return el.classList.add('fullScreenTable'); })
+                .catch(function (err) { return console.error("Error attempting to enter fullscreen mode: ".concat(err.message, " (").concat(err.name, ")")); });
+        }
+        else {
+            document.exitFullscreen()
+                .then(function () { return el.classList.remove('fullScreenTable'); })
+                .catch(function (err) { return console.error("Error attempting to exit fullscreen mode: ".concat(err.message, " (").concat(err.name, ")")); });
+        }
     });
 });
 // // Setting a cookie with SameSite=None and Secure attributes

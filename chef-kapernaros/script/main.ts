@@ -57,7 +57,6 @@ const picAnimation = () => {
         }
     })
     document.querySelectorAll('.achCards').forEach(img => {
-        console.log(window.pageYOffset)
         if (window.innerWidth < 770) {
             if (window.pageYOffset > 1000) {
                 img.classList.add('in-view')
@@ -99,7 +98,7 @@ let allNotActiveTitles = document.querySelectorAll('.secTitles') as NodeListOf<H
 allNotActiveTitles.forEach( listEl => {
     listEl.addEventListener('click', () => {
         allNotActiveTitles = document.querySelectorAll('.secTitles') as NodeListOf<HTMLLIElement>
-        console.log(listEl)
+        // console.log(listEl)
 
         if (!listEl.classList.contains('active')) {
             const titleActive = [...allNotActiveTitles].filter(el => el.classList.contains('active'))[0]
@@ -130,7 +129,20 @@ document.getElementById('myForm')?.addEventListener('submit', function(event) {
         alert("Failed to send email.")
     })
 })
-
+const allChefPic = document.querySelectorAll('.singlePicTable') as NodeListOf <HTMLDivElement>
+allChefPic.forEach(el => {
+    el.addEventListener('touchstart', () => {
+        if (!document.fullscreenElement) {
+            el.requestFullscreen()
+                .then(() => el.classList.add('fullScreenTable'))
+                .catch(err => console.error(`Error attempting to enter fullscreen mode: ${err.message} (${err.name})`));
+        } else {
+            document.exitFullscreen()
+                .then(() => el.classList.remove('fullScreenTable'))
+                .catch(err => console.error(`Error attempting to exit fullscreen mode: ${err.message} (${err.name})`));
+        }
+    })
+})
 // // Setting a cookie with SameSite=None and Secure attributes
 // document.cookie = "key=value; SameSite=None; Secure";
 

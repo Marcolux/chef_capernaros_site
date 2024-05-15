@@ -395,6 +395,20 @@
   body {
     width: 100% !important;
   }
+  body .maxWidth1500 {
+    padding: 0px !important;
+    margin-top: 30px !important;
+  }
+  body .maxWidth1500 p {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+  }
+  body .maxWidth1500 p.textGold {
+    font-size: 20px !important;
+  }
+  body .fontSize18 {
+    font-size: 16px !important;
+  }
   body #media_section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -565,6 +579,9 @@
     min-width: 100%;
     aspect-ratio: 1.5/1;
     margin: 10px 0px !important;
+  }
+  body .btnPrimary {
+    margin-left: 0px !important;
   }
 }
 /*# sourceMappingURL=media_page.css.map */

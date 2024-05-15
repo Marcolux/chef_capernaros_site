@@ -132,7 +132,7 @@ function initCarousel() {
                     <i id="nextSlide" class="fa-solid fa-chevron-down fontSize40"></i>     
                 </div>
                 <div id="slidePic">
-                    <img id="slideImg" class="" src="${slide.rightBG}" alt="">
+                    <img id="slideImg" src="${slide.rightBG}" alt="Carousel Picture">
                     <p class="m-0 note_${index}" id="picNote">${slide.picNote}</p>
                 </div>
             </div>
@@ -157,7 +157,6 @@ function initCarousel() {
                     setTimeout(() => {
                         circleWhite.style.opacity = '1'
                         circleWhite.style.transform = 'translateY(0%)' 
-
                     },250)
                 }
             },50)
