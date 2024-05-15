@@ -128,19 +128,21 @@ var inputText = document.querySelectorAll('.inputText');
 });
 var allChefPic = document.querySelectorAll('.singlePicTable');
 allChefPic.forEach(function (el) {
-    el.addEventListener('touchstart', function () {
-        if (!document.fullscreenElement) {
-            el.requestFullscreen()
-                .then(function () { return el.classList.add('fullScreenTable'); })
-                .catch(function (err) { return console.error("Error attempting to enter fullscreen mode: ".concat(err.message, " (").concat(err.name, ")")); });
-        }
-        else {
-            document.exitFullscreen()
-                .then(function () { return el.classList.remove('fullScreenTable'); })
-                .catch(function (err) { return console.error("Error attempting to exit fullscreen mode: ".concat(err.message, " (").concat(err.name, ")")); });
-        }
-    });
+    el.addEventListener('touchstart', function () { touchLogic(el); }, { passive: true });
+    el.addEventListener('click', function () { touchLogic(el); });
 });
+var touchLogic = function (el) {
+    if (!document.fullscreenElement) {
+        el.requestFullscreen()
+            .then(function () { return el.classList.add('fullScreenTable'); })
+            .catch(function (err) { return console.error("Error attempting to enter fullscreen mode: ".concat(err.message, " (").concat(err.name, ")")); });
+    }
+    else {
+        document.exitFullscreen()
+            .then(function () { return el.classList.remove('fullScreenTable'); })
+            .catch(function (err) { return console.error("Error attempting to exit fullscreen mode: ".concat(err.message, " (").concat(err.name, ")")); });
+    }
+};
 // // Setting a cookie with SameSite=None and Secure attributes
 // document.cookie = "key=value; SameSite=None; Secure";
 // Setting a cookie with SameSite=Lax
