@@ -125,7 +125,7 @@ $gold: #b59b07;
 }
 @media only screen and (max-width: 770px) {
     #contactPage{
-        background-color: #000000;
+        background-color: #4a4a4a;
         height: 100% !important;
         #contactIntro{
             position: absolute;
@@ -133,17 +133,26 @@ $gold: #b59b07;
             width: 90% !important;
             height: fit-content;
             color: #f8f8f5 !important;
-            // background-color: #fffffffa;
-            // border-radius: 4px;
-            // padding: 20px;
+            h3{
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
+            }
         }
         #chefForm{
-            margin-top: 0vh !important;
-            height: 100vh !important;
+            margin-top: 0px !important;
+            height: 90vh !important;
             #myForm{
                 top: 20vh !important;
                 max-width: 80% !important;
-                margin-top: 0px !important;
+                margin-top: 20px !important;
+                font-size: 14px !important;
+                input{
+                    height: 20px !important;
+                    font-size: 14px !important;
+                }
+                #messageSent{ font-size: 14px !important;}
             }
         }
     }

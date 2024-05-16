@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 770px) {
   #contactPage {
-    background-color: #000000;
+    background-color: #4a4a4a;
     height: 100% !important;
   }
   #contactPage #contactIntro {
@@ -138,14 +138,28 @@
     height: fit-content;
     color: #f8f8f5 !important;
   }
+  #contactPage #contactIntro h3 {
+    font-size: 18px;
+  }
+  #contactPage #contactIntro p {
+    font-size: 14px;
+  }
   #contactPage #chefForm {
-    margin-top: 0vh !important;
-    height: 100vh !important;
+    margin-top: 0px !important;
+    height: 90vh !important;
   }
   #contactPage #chefForm #myForm {
     top: 20vh !important;
     max-width: 80% !important;
-    margin-top: 0px !important;
+    margin-top: 20px !important;
+    font-size: 14px !important;
+  }
+  #contactPage #chefForm #myForm input {
+    height: 20px !important;
+    font-size: 14px !important;
+  }
+  #contactPage #chefForm #myForm #messageSent {
+    font-size: 14px !important;
   }
 }
 
