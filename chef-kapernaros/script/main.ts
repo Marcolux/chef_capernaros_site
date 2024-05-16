@@ -129,23 +129,23 @@ document.getElementById('myForm')?.addEventListener('submit', function(event) {
         alert("Failed to send email.")
     })
 })
-const allChefPic = document.querySelectorAll('.singlePicTable') as NodeListOf <HTMLDivElement>
-allChefPic.forEach(el => {
-    el.addEventListener('touchstart', () => { touchLogic(el)},{ passive: true })
-    el.addEventListener('click', () => { touchLogic(el)})
-})
+// const allChefPic = document.querySelectorAll('.singlePicTable') as NodeListOf <HTMLDivElement>
+// allChefPic.forEach(el => {
+//     el.addEventListener('touchstart', () => { touchLogic(el)},{ passive: true })
+//     el.addEventListener('click', () => { touchLogic(el)})
+// })
 
-const touchLogic = (el: HTMLElement) => {
-    if (!document.fullscreenElement) {
-        el.requestFullscreen()
-            .then(() => el.classList.add('fullScreenTable'))
-            .catch((err: any) => console.error(`Error attempting to enter fullscreen mode: ${err.message} (${err.name})`));
-    } else {
-        document.exitFullscreen()
-            .then(() => el.classList.remove('fullScreenTable'))
-            .catch(err => console.error(`Error attempting to exit fullscreen mode: ${err.message} (${err.name})`));
-    }
-}
+// const touchLogic = (el: HTMLElement) => {
+//     if (!document.fullscreenElement) {
+//         el.requestFullscreen()
+//             .then(() => el.classList.add('fullScreenTable'))
+//             .catch((err: any) => console.error(`Error attempting to enter fullscreen mode: ${err.message} (${err.name})`));
+//     } else {
+//         document.exitFullscreen()
+//             .then(() => el.classList.remove('fullScreenTable'))
+//             .catch(err => console.error(`Error attempting to exit fullscreen mode: ${err.message} (${err.name})`));
+//     }
+// }
 // // Setting a cookie with SameSite=None and Secure attributes
 // document.cookie = "key=value; SameSite=None; Secure";
 

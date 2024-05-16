@@ -1,27 +1,40 @@
 $primaryColor: #f8f8f5;
 $gold: #b59b07;
 #contactPage{
-    background-color: #eeededfa;
+    background-color: $primaryColor;
+    // background-color: #000000;
+
+    #contactIntro{
+        position: absolute;
+        top: 17vh;
+        width: 50% !important;
+        height: fit-content;
+        // background-color: #fffffffa;
+        // border-radius: 4px;
+        // padding: 20px;
+    }
     #chefForm{
+        position: relative;
         height: 100vh;
         display: flex;
         align-items: center;
         padding-left: 10vh;
         padding-right: 50px;
+        // margin-top: 30px;
         #lineGold{
             position: absolute;
             display: flex;;
             height: 100%;
             width: 4px;
-            background-color: #b59b07;
+            background-color: $gold;
             left: 80%;
         }
         #lineGold2{
             position: absolute;
-            display: flex;;
+            display: flex;
             height: 100%;
             width: 2px;
-            background-color: #b59b07;
+            background-color: $gold;
             left: 79.5%;
         }  
         #logoPic{
@@ -32,30 +45,38 @@ $gold: #b59b07;
             object-fit: cover;
             object-position: center; 
             position: absolute;
-            left: 55%;
+            left: 60%;
             top: 20%;
-            border: 7px solid $gold;
-            &::after{
-                content: '';
-                display: flex;;
-                height: 100%;
-                width: 2px;
-                background-color: #b59b07;
-            }  
+            border: 6px solid $gold;
+            filter: brightness(0.85);
+            // &::after{
+            //     content: '';
+            //     display: flex;
+            //     height: 100%;
+            //     width: 2px;
+            //     background-color: $gold;
+            // }  
         }
         #myForm{
             width: 40% !important;
             height: fit-content;
             background-color: #fffffffa;
+            border-radius: 6px;
+            position: absolute;
+            top: 30vh;
+            // background-color: #00000000;
+            // background-color: #626262;
             font-family: 'Inter';
             font-size: 15px;
-            color: #b59b07;
-            border: 1px solid #72727222;
+            // color: $gold;
+            color: #000000;
+            // border: 1px solid #72727237;
+            border: 1px solid $gold;
             box-shadow: 6px 6px 6px #75757525 ;
             z-index: 5;
             
             input{
-                height: 25px;
+                height: 23px;
                 font-family: 'Inter';
                 font-size: 15px;
                 color: #000000;
@@ -63,7 +84,7 @@ $gold: #b59b07;
                     border-top: 0px;
                     border-left: 0px;
                     border-right: 0px;
-                    border-bottom: 1px solid #b59b07;
+                    border-bottom: 1px solid $gold;
                     outline-width: 0px;
                     background-color: transparent;
                 }
@@ -71,7 +92,7 @@ $gold: #b59b07;
                     border-top: 0px;
                     border-left: 0px;
                     border-right: 0px;
-                    border-bottom: 1px solid #b59b07;
+                    border-bottom: 1px solid $gold;
                 }
                 background-color: transparent;
             }
@@ -80,16 +101,16 @@ $gold: #b59b07;
                 font-family: 'Inter';
                 font-size: 15px;
                 background-color: transparent;
-                border: 1px solid #b59b07;
+                border: 1px solid $gold;
                 padding: 5px;
                 &:focus-visible{
                     outline-width: 0px;
-                    border: 1px solid #b59b07;
+                    border: 1px solid $gold;
                 }
             }
             button{
-                border-color: #b59b07 !important;
-                color: #b59b07 !important;
+                border-color: $gold !important;
+                color: $gold !important;
             }
         }
     }
@@ -102,8 +123,30 @@ $gold: #b59b07;
 @media only screen and (max-width: 1361px) {
  
 }
-@media only screen and (min-width: 701px) and (max-width: 930px) {
-
+@media only screen and (max-width: 770px) {
+    #contactPage{
+        background-color: #000000;
+        height: 100% !important;
+        #contactIntro{
+            position: absolute;
+            top: 40px;
+            width: 90% !important;
+            height: fit-content;
+            color: #f8f8f5 !important;
+            // background-color: #fffffffa;
+            // border-radius: 4px;
+            // padding: 20px;
+        }
+        #chefForm{
+            margin-top: 0vh !important;
+            height: 100vh !important;
+            #myForm{
+                top: 20vh !important;
+                max-width: 80% !important;
+                margin-top: 0px !important;
+            }
+        }
+    }
 }
 @media only screen and (min-width: 701px) and (max-width: 1100px) {
     #chefForm{
@@ -113,9 +156,19 @@ $gold: #b59b07;
 }
 @media only screen and (max-width: 1080px) {
     #contactPage{
-        background-color: #eeededfa;
+       
         width: 100%;
         height: 80vh;
+        #contactIntro{
+            position: absolute;
+            top: 40px;
+            width: 90% !important;
+            height: fit-content;
+            // color: #f8f8f5 !important;
+            // background-color: #fffffffa;
+            // border-radius: 4px;
+            // padding: 20px;
+        }
         #chefForm{
             height: 90%;
             display: flex;
@@ -129,7 +182,7 @@ $gold: #b59b07;
                 display: flex;;
                 height: 4px;
                 width: 100%;
-                background-color: #b59b07;
+                background-color: $gold;
                 left: 0%;
                 bottom: 50px;
             }
@@ -138,7 +191,7 @@ $gold: #b59b07;
                 display: flex;;
                 width: 100%;
                 height: 2px;
-                background-color: #b59b07;
+                background-color: $gold;
                 left: 0%;
                 bottom: 40px;
             }  
@@ -146,13 +199,13 @@ $gold: #b59b07;
                 display: none !important;
             }
             #myForm{
-                margin-top: 70px;
+                top: 15vh !important;
                 width: 90% !important;
                 height: fit-content;
                 background-color: #fffffffa;
                 font-family: 'Inter';
                 font-size: 15px;
-                color: #b59b07;
+                color: $gold;
                 border: 1px solid #72727222;
                 box-shadow: 6px 6px 6px #75757525 ;
                 z-index: 5;
@@ -166,15 +219,16 @@ $gold: #b59b07;
                         border-top: 0px;
                         border-left: 0px;
                         border-right: 0px;
-                        border-bottom: 1px solid #b59b07;
+                        border-bottom: 1px solid $gold;
                         outline-width: 0px;
                         background-color: transparent;
                     }
                     &.inputText{
+                        border-radius: 0px;
                         border-top: 0px;
                         border-left: 0px;
                         border-right: 0px;
-                        border-bottom: 1px solid #b59b07;
+                        border-bottom: 1px solid $gold;
                     }
                     background-color: transparent;
                 }
@@ -183,16 +237,17 @@ $gold: #b59b07;
                     font-family: 'Inter';
                     font-size: 15px;
                     background-color: transparent;
-                    border: 1px solid #b59b07;
+                    border: 1px solid $gold;
+                    border-radius: 0px;
                     padding: 5px;
                     &:focus-visible{
                         outline-width: 0px;
-                        border: 1px solid #b59b07;
+                        border: 1px solid $gold;
                     }
                 }
                 button{
-                    border-color: #b59b07 !important;
-                    color: #b59b07 !important;
+                    border-color: $gold !important;
+                    color: $gold !important;
                 }
             }
         }

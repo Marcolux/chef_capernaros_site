@@ -669,23 +669,23 @@ html, body {
   min-width: 85px;
   font-size: 16px;
   background-color: transparent;
-  -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
-          filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+  font-weight: 600;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .btnPrimary:hover {
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.55));
-          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.55));
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.45));
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.45));
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .btnPrimary:active {
   -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
           filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
-  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 3px 3px 5px rgba(25, 25, 25, 0.15), inset -3px -3px 5px rgba(25, 25, 25, 0.15);
+          box-shadow: inset 3px 3px 5px rgba(25, 25, 25, 0.15), inset -3px -3px 5px rgba(25, 25, 25, 0.15);
 }
 
 .btnPrimary a {

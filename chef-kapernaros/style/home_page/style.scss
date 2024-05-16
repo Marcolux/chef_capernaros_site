@@ -526,15 +526,19 @@ $primaryColorLight: #00000090;
 	min-width: 85px;
 	font-size: 16px;
 	background-color: transparent;
-	filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+	font-weight: 600;
 	transition: all 0.3s ease;
 	&:hover{
-		filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.55));
+		filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.45));
+		// box-shadow: inset 2px 2px 4px rgba(25, 25, 25, 0.25),
+		// 			inset -2px -2px 4px rgba(25, 25, 25, 0.25);
+		border-radius: 4px;
 		cursor: pointer;
 	}
 	&:active{
 		filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
-		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+		box-shadow: inset 3px 3px 5px rgba(25, 25, 25, 0.15),
+					inset -3px -3px 5px rgba(25, 25, 25, 0.15);
 	}
 	a{
 		text-decoration: none;
