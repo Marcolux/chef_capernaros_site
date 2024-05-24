@@ -322,6 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620371/Niko/on%20the%20pass/o_t_p_8_f5uqa0.webp"},
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620536/Niko/on%20the%20pass/o_t_p_9_babbqd.webp"},
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620546/Niko/on%20the%20pass/o_t_p_10_k8dkae.webp"},
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1716565169/Niko/on%20the%20pass/viber_image_2024-05-20_15-00-03-885_tv4ejz.webp"},
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620557/Niko/on%20the%20pass/o_t_p_11_spnsd6.webp"},
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620568/Niko/on%20the%20pass/o_t_p_12_mglkcu.webp"},
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714620784/Niko/on%20the%20pass/o_t_p_13_bs7c0y.webp"},
