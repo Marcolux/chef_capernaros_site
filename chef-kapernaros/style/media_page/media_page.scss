@@ -8,9 +8,9 @@ $shadowInset: #949494;
     flex-direction: column;
     align-items: center;
     margin-top: 14vh;
-    // height: 75vh;
+    
     #sectionPic{
-        // border: 1px solid #aeaeae3b;
+        
         border: 1px solid $gold;
         display: flex;
         width: fit-content !important;
@@ -20,7 +20,7 @@ $shadowInset: #949494;
         align-items: center;
     }
     #mediaSelectorCont{
-        // box-shadow: 5px 5px $gold;
+        
         z-index: 2;
         height: 75vh;
         background-color: $background ;
@@ -29,7 +29,6 @@ $shadowInset: #949494;
             height: fit-content;
             color: #000000;
             font-family: 'Ledger';
-            // border: 1px solid #aeaeae65;
             border: 1px solid $gold;
             box-shadow:  6px 6px 10px $shadowInset inset,
                         -6px -6px 10px $shadowInset inset;
@@ -107,10 +106,8 @@ $shadowInset: #949494;
                         height: 65vh;
                         padding: 10px;
                         transition: all 0.3s ease-in-out;
-                        // border: 1px solid #aeaeae5a;
                         border: 1px solid $gold;
                         background-color: #ffffff;
-                        // box-shadow:  6px 6px 6px #aeaeae;
                         box-shadow:  6px 6px 10px $shadowInset inset,
                         -6px -6px 10px $shadowInset inset;
                         margin: 0px 20px;
