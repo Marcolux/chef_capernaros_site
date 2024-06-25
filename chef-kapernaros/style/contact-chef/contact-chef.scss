@@ -2,16 +2,11 @@ $primaryColor: #f8f8f5;
 $gold: #b59b07;
 #contactPage{
     background-color: $primaryColor;
-    // background-color: #000000;
-
     #contactIntro{
         position: absolute;
         top: 17vh;
         width: 50% !important;
         height: fit-content;
-        // background-color: #fffffffa;
-        // border-radius: 4px;
-        // padding: 20px;
     }
     #chefForm{
         position: relative;
@@ -20,7 +15,6 @@ $gold: #b59b07;
         align-items: center;
         padding-left: 10vh;
         padding-right: 50px;
-        // margin-top: 30px;
         #lineGold{
             position: absolute;
             display: flex;;
@@ -49,13 +43,6 @@ $gold: #b59b07;
             top: 20%;
             border: 6px solid $gold;
             filter: brightness(0.85);
-            // &::after{
-            //     content: '';
-            //     display: flex;
-            //     height: 100%;
-            //     width: 2px;
-            //     background-color: $gold;
-            // }  
         }
         #myForm{
             width: 40% !important;
@@ -64,13 +51,9 @@ $gold: #b59b07;
             border-radius: 6px;
             position: absolute;
             top: 30vh;
-            // background-color: #00000000;
-            // background-color: #626262;
             font-family: 'Ledger';
-            font-size: 15px;
-            // color: $gold;
+            font-size: 16px;
             color: #000000;
-            // border: 1px solid #72727237;
             border: 1px solid $gold;
             box-shadow: 6px 6px 6px #75757525 ;
             z-index: 5;
@@ -78,43 +61,38 @@ $gold: #b59b07;
             input{
                 height: 23px;
                 font-family: 'Ledger';
-                font-size: 15px;
+                font-size: 16px;
                 color: #000000;
                 &:focus-visible{
-                    border-top: 0px;
-                    border-left: 0px;
-                    border-right: 0px;
-                    border-bottom: 1px solid $gold;
+                    
                     outline-width: 0px;
                     background-color: transparent;
                 }
                 &.inputText{
-                    border-top: 0px;
-                    border-left: 0px;
-                    border-right: 0px;
-                    border-bottom: 1px solid $gold;
+                    border: 1px solid $gold;
                 }
                 background-color: transparent;
             }
             select{
                 height: 28px;
                 font-family: 'Ledger';
-                font-size: 15px;
+                font-size: 16px;
                 color: #000000;
+                border: 1px solid $gold;
                 &:focus-visible{
-                    border: 1px solid $gold;
+                    border: 1px solid $gold !important;
                     outline-width: 0px;
-                    background-color: transparent;
                 }
                 &.inputText{
-                    border-bottom: 1px solid $gold;
+                    border: 1px solid $gold !important;
                 }
                 background-color: transparent;
             }
+
             textarea{
                 resize: none;
                 font-family: 'Ledger';
-                font-size: 15px;
+                font-size: 16px;
                 background-color: transparent;
                 border: 1px solid $gold;
                 padding: 5px;
@@ -228,7 +206,7 @@ $gold: #b59b07;
                 height: fit-content;
                 background-color: #fffffffa;
                 font-family: 'Ledger';
-                font-size: 15px;
+                font-size: 16px;
                 color: $gold;
                 border: 1px solid #72727222;
                 box-shadow: 6px 6px 6px #75757525 ;
@@ -237,7 +215,7 @@ $gold: #b59b07;
                 input{
                     height: 25px;
                     font-family: 'Ledger';
-                    font-size: 15px;
+                    font-size: 16px;
                     color: #000000;
                     &:focus-visible{
                         border-top: 0px;
@@ -259,7 +237,7 @@ $gold: #b59b07;
                 textarea{
                     resize: none;
                     font-family: 'Ledger';
-                    font-size: 15px;
+                    font-size: 16px;
                     background-color: transparent;
                     border: 1px solid $gold;
                     border-radius: 0px;

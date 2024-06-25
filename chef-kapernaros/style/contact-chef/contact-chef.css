@@ -73,7 +73,7 @@
   position: absolute;
   top: 30vh;
   font-family: 'Ledger';
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
   border: 1px solid #b59b07;
   -webkit-box-shadow: 6px 6px 6px #75757525;
@@ -84,49 +84,42 @@
 #contactPage #chefForm #myForm input {
   height: 23px;
   font-family: 'Ledger';
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
   background-color: transparent;
 }
 
 #contactPage #chefForm #myForm input:focus-visible {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 1px solid #b59b07;
   outline-width: 0px;
   background-color: transparent;
 }
 
 #contactPage #chefForm #myForm input.inputText {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 1px solid #b59b07;
+  border: 1px solid #b59b07;
 }
 
 #contactPage #chefForm #myForm select {
   height: 28px;
   font-family: 'Ledger';
-  font-size: 15px;
+  font-size: 16px;
   color: #000000;
+  border: 1px solid #b59b07;
   background-color: transparent;
 }
 
 #contactPage #chefForm #myForm select:focus-visible {
-  border: 1px solid #b59b07;
+  border: 1px solid #b59b07 !important;
   outline-width: 0px;
-  background-color: transparent;
 }
 
 #contactPage #chefForm #myForm select.inputText {
-  border-bottom: 1px solid #b59b07;
+  border: 1px solid #b59b07 !important;
 }
 
 #contactPage #chefForm #myForm textarea {
   resize: none;
   font-family: 'Ledger';
-  font-size: 15px;
+  font-size: 16px;
   background-color: transparent;
   border: 1px solid #b59b07;
   padding: 5px;
@@ -251,7 +244,7 @@
     height: fit-content;
     background-color: #fffffffa;
     font-family: 'Ledger';
-    font-size: 15px;
+    font-size: 16px;
     color: #b59b07;
     border: 1px solid #72727222;
     -webkit-box-shadow: 6px 6px 6px #75757525;
@@ -261,7 +254,7 @@
   #contactPage #chefForm #myForm input {
     height: 25px;
     font-family: 'Ledger';
-    font-size: 15px;
+    font-size: 16px;
     color: #000000;
     background-color: transparent;
   }
@@ -283,7 +276,7 @@
   #contactPage #chefForm #myForm textarea {
     resize: none;
     font-family: 'Ledger';
-    font-size: 15px;
+    font-size: 16px;
     background-color: transparent;
     border: 1px solid #b59b07;
     border-radius: 0px;

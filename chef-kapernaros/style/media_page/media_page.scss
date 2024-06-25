@@ -36,20 +36,21 @@ $shadowInset: #949494;
             .picSections{
                 width: fit-content;
                 li{
-                    font-size: 17px;
+                    font-size: 16px;
                     text-decoration: none;
                     list-style: none ;
                     transition: scale .3s ease;
                     
                     &:not(.active):hover{
                         cursor: pointer;
-                        scale: 1.1;
+                        scale: 1.02;
                         font-weight: 600;
                     }
                     &.active{
                         color: $gold;
                         font-weight: 600;
-                        scale: 1.1;
+                        scale: 1;
+                        letter-spacing: 0.03em;
                     }
                 }
             }

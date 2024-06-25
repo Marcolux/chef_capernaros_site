@@ -54,7 +54,7 @@
 }
 
 #media_section #mediaSelectorCont #mediaBlackBg .picSections li {
-  font-size: 17px;
+  font-size: 16px;
   text-decoration: none;
   list-style: none;
   -webkit-transition: scale .3s ease;
@@ -63,14 +63,15 @@
 
 #media_section #mediaSelectorCont #mediaBlackBg .picSections li:not(.active):hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1.02;
   font-weight: 600;
 }
 
 #media_section #mediaSelectorCont #mediaBlackBg .picSections li.active {
   color: #b59b07;
   font-weight: 600;
-  scale: 1.1;
+  scale: 1;
+  letter-spacing: 0.03em;
 }
 
 #media_section #mediaContainer {

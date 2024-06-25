@@ -67,7 +67,7 @@
             
             <div id="contactIntro">
                 <h3 class="textGold font-ledger text-bold my-0">Let's Keep in Touch</h3>
-                <p class="font-ledger mt-10">Please complete the contact form below and we'll reply soon. </p>
+                <p class="font-ledger mt-10 fontSize16">Please complete the contact form below and we'll reply soon. </p>
             </div>
             <form id="myForm" class="flex flex-column flex-justifyContent-center p-30">
                 <div class="col-12 flex">
@@ -87,21 +87,21 @@
                     <div class="field mb-15 flex flex-column col-6">
 
                         <label class="mb-5" for="email_subject">Email Subject*</label>
-                        <select class="inputText mb-10" name="email_subject" id="email_subject">
-                            <option value="" disabled selected>Select One</option>
-                            <option value="Chef's Table Experience">Chef's Table Experience</option>
-                            <option value="Consulting">Consulting</option>
-                            <option value="Cooking Classes">Cooking Classes</option>
-                            <option value="Collaborations ">Collaborations </option>
-                            <option value="Media/PR Requests">Media/PR Requests</option>
-                            <option value="Other">Other </option>
+                        <select class="mb-10 fontSize16" name="email_subject" id="email_subject" required>
+                            <option class="fontSize16 px-5" value="" disabled selected></option>
+                            <option class="fontSize16 px-5" value="Chef's Table Experience">Chef's Table Experience</option>
+                            <option class="fontSize16 px-5" value="Consulting">Consulting</option>
+                            <option class="fontSize16 px-5" value="Cooking Classes">Cooking Classes</option>
+                            <option class="fontSize16 px-5" value="Collaborations ">Collaborations </option>
+                            <option class="fontSize16 px-5" value="Media/PR Requests">Media/PR Requests</option>
+                            <option class="fontSize16 px-5" value="Other">Other </option>
                         </select>
                     </div>
                     <!-- <input class="inputText mb-10" type="text" name="email_subject" id="email_subject"> -->
                     <div class="mb-15 ml-20 flex flex-column col-6">
                         
                             <label class="mb-5" for="email_address">Email Address*</label>
-                            <input class="inputText mb-10" type="text" name="email_address" id="email_address">
+                            <input class="inputText mb-10" type="email" name="email_address" id="email_address" required pattern=".*\.com$" title="Please enter an email ending with '.com'">
                         
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="flex flex-justifyContent-spaceBetween">
                     <button type="submit" class="btnPrimary py-5">Send</button>
-                    <p id="messageSent" class="hide text-bold fontSize18 my-0" style="color: #000000;">Message Sent! Thank You!</p>
+                    <p id="messageSent" class="hide text-bold fontSize16 my-0" style="color: #000000;">Message Sent! Thank You!</p>
 
                 </div>
             </form>

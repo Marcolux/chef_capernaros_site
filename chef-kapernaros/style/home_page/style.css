@@ -1414,7 +1414,7 @@ footer #webcraftLink {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 16px !important;
+  font-size: 14px !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
