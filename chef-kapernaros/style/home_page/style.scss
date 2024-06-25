@@ -295,6 +295,18 @@ $primaryColorLight: #00000090;
     background-size: cover;
     background-position: right;
     height: 100%;
+	.picCpt{
+		position: absolute; 
+		bottom: 0px; 
+		right: 20px; 
+		color: #FFFFFF; 
+		font-size: 14px !important;
+		text-shadow:     
+		-1px -1px 1px #000000,
+		1px -1px 1px #000000,
+		-1px 1px 1px #000000,
+		1px 1px 1px #000000;
+	}
     .chefQuote{
         p{
 			margin: 0px;

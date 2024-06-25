@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { src: "https://res.cloudinary.com/drdrs6pdq/image/upload/v1714613151/Niko/f_f_33_ke48sd.webp", caption: 'Something here' },
         { src: "https://res.cloudinary.com/drdrs6pdq/image/upload/v1714613366/Niko/f_f_36_j484sl.webp", caption: 'Something here' },
         { src: "https://res.cloudinary.com/drdrs6pdq/image/upload/v1714613639/Niko/f_f_38_mfwtlr.webp", caption: 'Something here' },
-        { src: "https://res.cloudinary.com/drdrs6pdq/image/upload/v1715304167/viber_image_2024-05-07_22-30-12-805_kndjk7.webp", caption: 'Something here' },
+        { src: "https://res.cloudinary.com/drdrs6pdq/image/upload/v1715304167/viber_image_2024-05-07_22-30-12-805_kndjk7.webp", caption: 'Gianluigi Buffon' },
     ];
     var growingInGreeceList_src = [
         { src: 'growingInGreeceList', caption: null },
