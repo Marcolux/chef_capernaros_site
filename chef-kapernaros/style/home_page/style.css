@@ -9,6 +9,18 @@ html, body {
   color: #000;
 }
 
+.navBar #socialMedia a:not(.logoNav) i {
+  font-size: 25px !important;
+}
+
+.navBar #socialMedia a:not(.logoNav):hover::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0% !important;
+  width: 0% !important;
+}
+
 .navBar.scrolled.biggerScreen {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;

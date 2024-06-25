@@ -19,7 +19,18 @@ $primaryColorLight: #00000090;
 	background-color: $navBackGroundColor;
     font: $navFont;
 	color: $navBarTextColor;
+	#socialMedia a:not(.logoNav){
+		i{
+			font-size: 25px !important;
+		}
+		&:hover::before {
 	
+			display: flex;
+			height: 0% !important;
+			width: 0% !important;
+		
+		}
+	}
 	&.scrolled{
 		
 		&.biggerScreen{

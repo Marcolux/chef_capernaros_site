@@ -4,6 +4,7 @@ const hambMenu = document.querySelector('.hamburger-menu') as HTMLElement
 const navMenu = document.getElementById('navMenu') as HTMLElement
 const navBar = document.querySelector('.navBar') as HTMLElement
 const spanToBreak = document.querySelectorAll('.brSm') as NodeListOf<HTMLElement>
+const socialMedia = document.querySelector('#socialMedia') as HTMLElement
 if (hambMenu) {
 
     hambMenu.addEventListener('click', function() {
@@ -41,9 +42,11 @@ const navBarAdjToScreen = () => {
 const navScrolling = ()=>{
     if (window.pageYOffset > 30) {
         navBar.classList.add('scrolled')
+        socialMedia.classList.remove('hide')
     } else {
         if (!navBar.classList.contains('scrolledAlways')) {
             navBar.classList.remove('scrolled')
+            socialMedia.classList.add('hide')
         }
     }
 }
