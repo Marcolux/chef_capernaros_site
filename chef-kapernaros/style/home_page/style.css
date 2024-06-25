@@ -476,7 +476,7 @@ html, body {
 }
 
 .bioLanding .bioLandingTextContainer .textBioLanding {
-  font-family: 'Inter';
+  font-family: 'Ledger';
   text-align: justify;
   text-justify: inter-word;
   padding-right: 60px;
@@ -554,7 +554,7 @@ html, body {
 }
 
 .charityLanding .charityLandingTextContainer .textCharityLanding {
-  font-family: 'Inter';
+  font-family: 'Ledger';
   text-align: justify;
   text-justify: inter-word;
 }
@@ -662,7 +662,7 @@ html, body {
 .btnPrimary {
   border: 1px solid #897400;
   color: #897400;
-  font-family: 'Inter';
+  font-family: 'Ledger';
   text-decoration: none;
   padding: 10px 25px;
   display: -webkit-box;

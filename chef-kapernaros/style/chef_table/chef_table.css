@@ -103,7 +103,7 @@
 
 #tablePicContainer .singlePicTable:hover .picDescr h3, #tablePicContainer .singlePicTable:hover .picDescr ul {
   scale: 1;
-  font-family: 'Inter';
+  font-family: 'Ledger';
   font-size: 20px;
 }
 

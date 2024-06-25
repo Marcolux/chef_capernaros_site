@@ -66,8 +66,8 @@
         <section id="chefForm" class="">
             
             <div id="contactIntro">
-                <h3 class="textGold font-inter text-bold my-0">Let's Keep in Touch</h3>
-                <p class="font-inter mt-10">Fill out the form below, and I'll get back to you personally. </p>
+                <h3 class="textGold font-ledger text-bold my-0">Let's Keep in Touch</h3>
+                <p class="font-ledger mt-10">Please complete the contact form below and we'll reply soon. </p>
             </div>
             <form id="myForm" class="flex flex-column flex-justifyContent-center p-30">
                 <div class="col-12 flex">
@@ -83,13 +83,27 @@
                         <div class="lineBorder"></div>
                     </div>
                 </div>
-                <div class="field mb-15 flex flex-column">
-                    <label class="mb-5" for="email_subject">Email Subject*</label>
-                    <input class="inputText mb-10" type="text" name="email_subject" id="email_subject">
-                </div>
-                <div class="field mb-15 flex flex-column">
-                    <label class="mb-5" for="email_address">Email Address*</label>
-                    <input class="inputText mb-10" type="text" name="email_address" id="email_address">
+                <div class="field mb-15 flex col-12">
+                    <div class="field mb-15 flex flex-column col-6">
+
+                        <label class="mb-5" for="email_subject">Email Subject*</label>
+                        <select class="inputText mb-10" name="email_subject" id="email_subject">
+                            <option value="" disabled selected>Select One</option>
+                            <option value="Chef's Table Experience">Chef's Table Experience</option>
+                            <option value="Consulting">Consulting</option>
+                            <option value="Cooking Classes">Cooking Classes</option>
+                            <option value="Collaborations ">Collaborations </option>
+                            <option value="Media/PR Requests">Media/PR Requests</option>
+                            <option value="Other">Other </option>
+                        </select>
+                    </div>
+                    <!-- <input class="inputText mb-10" type="text" name="email_subject" id="email_subject"> -->
+                    <div class="mb-15 ml-20 flex flex-column col-6">
+                        
+                            <label class="mb-5" for="email_address">Email Address*</label>
+                            <input class="inputText mb-10" type="text" name="email_address" id="email_address">
+                        
+                    </div>
                 </div>
                 <div class="field mb-15 flex flex-column">
                     <label class="mb-5" for="message">Message*</label>

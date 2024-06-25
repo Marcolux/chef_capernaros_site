@@ -42,11 +42,12 @@ const navBarAdjToScreen = () => {
 const navScrolling = ()=>{
     if (window.pageYOffset > 30) {
         navBar.classList.add('scrolled')
-        socialMedia.classList.remove('hide')
+        if (socialMedia) socialMedia.classList.remove('hide')
+        
     } else {
         if (!navBar.classList.contains('scrolledAlways')) {
             navBar.classList.remove('scrolled')
-            socialMedia.classList.add('hide')
+            if (socialMedia) socialMedia.classList.add('hide')
         }
     }
 }
@@ -115,8 +116,9 @@ declare var emailjs: any
 emailjs.init('0wA6kpUaumn2FNdbg')
 const messageSent = document.querySelector('#messageSent') as HTMLElement
 const inputText = document.querySelectorAll('.inputText') as NodeListOf <HTMLInputElement>
+const inputTextSelect = document.querySelectorAll('select.inputText') as  NodeListOf<HTMLSelectElement>
 
-
+console.log(inputTextSelect)
 document.getElementById('myForm')?.addEventListener('submit', function(event) {
     event.preventDefault() // Prevent the default form submission
     
@@ -124,6 +126,7 @@ document.getElementById('myForm')?.addEventListener('submit', function(event) {
     .then(function(response: any) {
         messageSent.classList.remove('hide')
         inputText.forEach(text => text.value= '')
+        inputTextSelect.forEach(text => text.value= 'Select One')
         console.log('SUCCESS!', response.status, response.text)
         setTimeout(()=>{ messageSent.classList.add('hide') }, 5000)
         // alert("Email sent successfully!")

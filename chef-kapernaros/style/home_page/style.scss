@@ -382,7 +382,7 @@ $primaryColorLight: #00000090;
 	}
 	.bioLandingTextContainer{
 		.textBioLanding{
-			font-family: 'Inter';
+			font-family: 'Ledger';
 			text-align: justify;
 			text-justify: inter-word;
 			padding-right: 60px;
@@ -441,7 +441,7 @@ $primaryColorLight: #00000090;
 	.charityLandingTextContainer{
 		padding-left: 80px;
 		.textCharityLanding{
-			font-family: 'Inter';
+			font-family: 'Ledger';
 			text-align: justify;
 			text-justify: inter-word;
 		}
@@ -526,7 +526,7 @@ $primaryColorLight: #00000090;
 .btnPrimary {
 	border: 1px solid $primaryColor;
 	color: $primaryColor;
-	font-family: 'Inter';
+	font-family: 'Ledger';
 	text-decoration: none;
 	padding: 10px 25px;
 	display: flex;
