@@ -85,7 +85,7 @@ function initCarousel() {
         description: 'After three years at Avil on the Park, in June of 2024, I welcomed a new challenge and accepted a position with Levy Restaurants Cultural Attractions as Executive Chef of Navy Pier Chicago.  Here, I fuse culinary experiences with the timeless architectural beauty of Chicago and Lake Michigan.',
         leftBG: '#000B4C',
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1719276331/Kapernaros-navyPier_dgxwap.jpg',
-        picNote: 'Levy Restaurants, Navy Pier, Chicago'
+        picNote: 'Levy Restaurants, Chicago'
     };
     var newSlidesList = new slidesList();
     // Append slide objects
