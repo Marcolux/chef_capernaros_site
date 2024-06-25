@@ -81,10 +81,10 @@ function initCarousel() {
         picNote: 'Avli on the Park, Lakeshore East, Chicago'
     };
     const slide7 = {
-        description: 'In June of 2024, I welcomed a new challenge and accepted a position with Levy Restaurants Cultural Attractions as Executive Chef of Navy Pier Chicago.  Here, I fuse culinary experiences with the timeless architectural beauty of Chicago and Lake Michigan.',
+        description: 'After three years at Avil on the Park, in June of 2024, I welcomed a new challenge and accepted a position with Levy Restaurants Cultural Attractions as Executive Chef of Navy Pier Chicago.  Here, I fuse culinary experiences with the timeless architectural beauty of Chicago and Lake Michigan.',
         leftBG: '#000B4C',
-        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1719343585/Kapernaros_NavyPier_gae6ms.jpg',
-        picNote: 'Navy Pier, Chicago'
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1719276331/Kapernaros-navyPier_dgxwap.jpg',
+        picNote: 'Levy Restaurants, Chicago'
     };
     const newSlidesList = new slidesList();
     // Append slide objects

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" id="contactPage">
-
     <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +25,6 @@
 
         <!-- Title -->
         <title>Chef Kapernaros</title>
-
     </head>
 
     <body>
@@ -61,17 +58,15 @@
                 <a href="../pages/chef-table.html">The Chef's Table</a>
                 <a href="../pages/contact-the-chef.html">Contact</a>
             </div>
-            
         </nav>
-        <section id="chefForm" class="">
-            
+
+        <section id="chefForm">
             <div id="contactIntro">
                 <h3 class="textGold font-ledger text-bold my-0">Let's Keep in Touch</h3>
-                <p class="font-ledger mt-10 fontSize16">Please complete the contact form below and we'll reply soon. </p>
+                <p class="font-ledger mt-5 mb-0 fontSize16">For chef's table experience, consulting, cooking classes, collaborations or media/pr requests please complete the contact form below and we'll reply soon. </p>
             </div>
-            <form id="myForm" class="flex flex-column flex-justifyContent-center p-30">
+            <form id="myForm" class="flex flex-column flex-justifyContent-center p-25 mt-15">
                 <div class="col-12 flex">
-
                     <div class="field mb-15 flex flex-column col-6">
                         <label class="mb-5" for="from_first_name">First Name*</label>
                         <input class="inputText mb-10" type="text" name="from_first_name" id="from_first_name" required>
@@ -85,7 +80,6 @@
                 </div>
                 <div class="field mb-15 flex col-12">
                     <div class="field mb-15 flex flex-column col-6">
-
                         <label class="mb-5" for="email_subject">Email Subject*</label>
                         <select class="mb-10 fontSize16" name="email_subject" id="email_subject" required>
                             <option class="fontSize16 px-5" value="" disabled selected></option>
@@ -97,17 +91,14 @@
                             <option class="fontSize16 px-5" value="Other">Other </option>
                         </select>
                     </div>
-                    <!-- <input class="inputText mb-10" type="text" name="email_subject" id="email_subject"> -->
                     <div class="mb-15 ml-20 flex flex-column col-6">
-                        
-                            <label class="mb-5" for="email_address">Email Address*</label>
-                            <input class="inputText mb-10" type="email" name="email_address" id="email_address" required pattern=".*\.com$" title="Please enter an email ending with '.com'">
-                        
+                        <label class="mb-5" for="email_address">Email Address*</label>
+                        <input class="inputText mb-10" type="email" name="email_address" id="email_address" required pattern=".*\.com$" title="Please enter an email ending with '.com'">
                     </div>
                 </div>
                 <div class="field mb-15 flex flex-column">
                     <label class="mb-5" for="message">Message*</label>
-                    <textarea rows="6" class="inputText mb-10 p-5" name="message" id="message" required></textarea>
+                    <textarea rows="5" class="inputText mb-10 p-5" name="message" id="message" required></textarea>
                 </div>
                 <div class="flex flex-justifyContent-spaceBetween">
                     <button type="submit" class="btnPrimary py-5">Send</button>
@@ -124,9 +115,6 @@
         <!-- Script -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script defer type="text/javascript" src=../script/main.js></script>
-        
-
 
     </body>
-
 </html>

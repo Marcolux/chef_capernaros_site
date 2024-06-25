@@ -615,7 +615,25 @@ $primaryColorLight: #00000090;
 
 		}
 	}
-
+	.achCards{
+		&.in-view{
+			&#card-1{
+				right: 30%;
+			}
+			&#card-2{
+				font-size: 25px !important;
+			}
+			&#card-3{
+				font-size: 20px !important;
+			}
+			&#card-4{
+				font-size: 17px !important;
+			}
+			&#card-5{
+				font-size: 25px !important;
+			}
+		}
+	}
 }
 @media only screen and (min-width: 771px) and (max-width: 1050px)  {
 
@@ -748,6 +766,11 @@ $primaryColorLight: #00000090;
 				max-height: 50% !important;
 				display: flex;
 			}
+		}
+		.btnPrimary{
+			position: absolute;
+			bottom: -40px;
+			left: 20px;
 		}
 	}
 	.bioLanding{

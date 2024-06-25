@@ -47,8 +47,8 @@
 }
 
 #contactPage #chefForm #logoPic {
-  width: 35vw;
-  height: 35vw;
+  width: 32vw;
+  height: 32vw;
   border-radius: 50%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;

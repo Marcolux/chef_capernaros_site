@@ -752,6 +752,21 @@ html, body {
   .achievementLanding .imgAchvm img {
     height: 97% !important;
   }
+  .achCards.in-view#card-1 {
+    right: 30%;
+  }
+  .achCards.in-view#card-2 {
+    font-size: 25px !important;
+  }
+  .achCards.in-view#card-3 {
+    font-size: 20px !important;
+  }
+  .achCards.in-view#card-4 {
+    font-size: 17px !important;
+  }
+  .achCards.in-view#card-5 {
+    font-size: 25px !important;
+  }
 }
 
 @media only screen and (min-width: 771px) and (max-width: 1050px) {
@@ -898,6 +913,11 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .achievementLanding .btnPrimary {
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
   }
   .bioLanding {
     -webkit-box-orient: vertical;
