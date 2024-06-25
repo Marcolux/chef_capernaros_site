@@ -5,8 +5,8 @@ const navMenu = document.getElementById('navMenu') as HTMLElement
 const navBar = document.querySelector('.navBar') as HTMLElement
 const spanToBreak = document.querySelectorAll('.brSm') as NodeListOf<HTMLElement>
 const socialMedia = document.querySelector('#socialMedia') as HTMLElement
-if (hambMenu) {
 
+if (hambMenu) {
     hambMenu.addEventListener('click', function() {
         navMenu.classList.toggle('show')
         navMenu.classList.toggle('hide',!navMenu.classList.contains('show'))
@@ -14,7 +14,6 @@ if (hambMenu) {
         navBar.classList.toggle('expand')
     })
 }
-
 
 const navBarAdjToScreen = () => {
     
@@ -39,6 +38,7 @@ const navBarAdjToScreen = () => {
         })
     }
 }
+
 const navScrolling = ()=>{
     if (window.pageYOffset > 30) {
         navBar.classList.add('scrolled')
@@ -97,12 +97,11 @@ navScrolling()
 picAnimation()
 
 const container = document.querySelector('#bigPic') as HTMLDivElement
-
 let allNotActiveTitles = document.querySelectorAll('.secTitles') as NodeListOf<HTMLLIElement>
+
 allNotActiveTitles.forEach( listEl => {
     listEl.addEventListener('click', () => {
         allNotActiveTitles = document.querySelectorAll('.secTitles') as NodeListOf<HTMLLIElement>
-        // console.log(listEl)
 
         if (!listEl.classList.contains('active')) {
             const titleActive = [...allNotActiveTitles].filter(el => el.classList.contains('active'))[0]
@@ -118,10 +117,8 @@ const messageSent = document.querySelector('#messageSent') as HTMLElement
 const inputText = document.querySelectorAll('.inputText') as NodeListOf <HTMLInputElement>
 const inputTextSelect = document.querySelectorAll('select.inputText') as  NodeListOf<HTMLSelectElement>
 
-console.log(inputTextSelect)
 document.getElementById('myForm')?.addEventListener('submit', function(event) {
     event.preventDefault() // Prevent the default form submission
-    
     emailjs.sendForm('service_m5a5vcb', 'template_1jfyvjh', this)
     .then(function(response: any) {
         messageSent.classList.remove('hide')
@@ -129,34 +126,12 @@ document.getElementById('myForm')?.addEventListener('submit', function(event) {
         inputTextSelect.forEach(text => text.value= 'Select One')
         console.log('SUCCESS!', response.status, response.text)
         setTimeout(()=>{ messageSent.classList.add('hide') }, 5000)
-        // alert("Email sent successfully!")
     }, function(error: any) {
         console.log('FAILED...', error)
         alert("Failed to send email.")
     })
 })
-// const allChefPic = document.querySelectorAll('.singlePicTable') as NodeListOf <HTMLDivElement>
-// allChefPic.forEach(el => {
-//     el.addEventListener('touchstart', () => { touchLogic(el)},{ passive: true })
-//     el.addEventListener('click', () => { touchLogic(el)})
-// })
 
-// const touchLogic = (el: HTMLElement) => {
-//     if (!document.fullscreenElement) {
-//         el.requestFullscreen()
-//             .then(() => el.classList.add('fullScreenTable'))
-//             .catch((err: any) => console.error(`Error attempting to enter fullscreen mode: ${err.message} (${err.name})`));
-//     } else {
-//         document.exitFullscreen()
-//             .then(() => el.classList.remove('fullScreenTable'))
-//             .catch(err => console.error(`Error attempting to exit fullscreen mode: ${err.message} (${err.name})`));
-//     }
-// }
-// // Setting a cookie with SameSite=None and Secure attributes
-// document.cookie = "key=value; SameSite=None; Secure";
 
 // Setting a cookie with SameSite=Lax
 document.cookie = "key=value; SameSite=Lax";
-
-
-console.log('all the time 4 try')

@@ -133,6 +133,18 @@ $shadowInset: #949494;
                                 box-shadow:  6px 6px 6px #aeaeae;
                             }
                         }
+                        .mediaCaption{
+                            position: absolute;
+                            bottom: 5%;
+                            right: 30%;
+                            color: #ffffff;
+                            font-size: 20px;
+                            text-shadow:     
+                            -1px -1px 1px #000000,
+                            1px -1px 1px #000000,
+                            -1px 1px 1px #000000,
+                            1px 1px 1px #000000;
+                        }
                     }
                     &.fullscreen-mode{
                         .picToEn{ object-fit: contain; }
@@ -289,9 +301,13 @@ $shadowInset: #949494;
                                 width: 100%;
                                 padding: 0px;
                                 margin: 10px !important;
+
                                 .picToEn{
                                     max-width: 300px;
                                     max-height: 360px;
+                                }
+                                .mediaCaption{
+                                    bottom: 15%
                                 }
                             }
                             &.fullscreen-mode{
@@ -436,6 +452,9 @@ $shadowInset: #949494;
                                 .picToEn{
                                     max-width: 300px;
                                     max-height: 360px;
+                                }
+                                .mediaCaption{
+                                    bottom: 20%;
                                 }
                             }
                             &.fullscreen-mode{
