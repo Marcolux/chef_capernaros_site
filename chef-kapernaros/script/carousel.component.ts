@@ -65,40 +65,46 @@ class slidesList {
 
 function initCarousel() {
     const slide1 = {
-        description: 'Born and raised in Piraeus, Greece, Chef Nikolaos Kapernaros began his career studying at the Greek Culinary Institute &amp; working on islands such as Rhodes, Kos and Crete.',
+        description: 'Born and raised in Piraeus, Greece, I began my career studying at the Greek Culinary Institute & working on islands such as Rhodes, Kos and Crete.',
         leftBG: '#000B4C',
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495614/Niko/Rectangle_55_rwurxu.webp',
         picNote: 'Piraeus, Attica'
     }
     const slide2 = {
-        description: 'In 2011, Chef Kapernaros began teaching at the Culinary Institute of Greece, Anavissos, showcasing the cooking styles of Greek, French, Mediterranean and international cuisines. Chef Kapernaros and team worked closely with the Greek Government and the Council of the European Union on exhibitions featuring Greek cuisine and environmental sustainability.',
+        description: 'In 2011, I achieved one of my dreams - teaching at the Culinary Institute of Greece, Anavissos, showcasing the cooking styles of Greek, French, Mediterranean and international cuisines.  My team and I worked closely with the Greek Government and the Council of the European Union on exhibitions featuring Greek cuisine and environmental sustainability.',
         leftBG: '#000000',
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495906/Niko/Rectangle_52_xrwyz8.webp',
         picNote: 'Culinary Institute of Greece, Anavissos, Attica'
     }
     const slide3 = {
-        description: 'Grand Resort Lagonissi, Greece, a private peninsula Luxury Resort and member of Leading Hotels of the World.  There, he worked his way up to being the Head Chef for royalty, international athletes, movie stars &amp; musicians during their stay at the resort.',
+        description: 'As I continued teaching, I then settled into Grand Resort Lagonissi, Greece, a private peninsula Luxury Resort and member of Leading Hotels of the World.  I worked my way up and was entrusted to be the Head Chef for Lagonissi’s VIP guests such as royalty, world-renowned athletes, award-winning actors/actresses and those in the music industry. I ended my career at Grand Resort Lagonissi as Executive Sous Chef in 2018.',
         leftBG: '#262626',
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1711495915/Niko/Rectangle_54_lltm3q.webp',
         picNote: 'Lagonissi, Attica'
     }
     const slide4 = {
-        description: 'In 2018, Niko, his wife Pam and daughter Chrysa moved to Chicago. They welcomed their newest member in January 2021, making them a family of four.',
-        leftBG: '#262626',
+        description: 'In 2018, my wife and I made the decision to move to Chicago to be closer to her family.  We packed up our home, and with our daughter, and moved to the other side of the world. I continued to pursue my passion for cooking, and in January of 2021 we welcomed a beautiful boy - making us a family of four.',
+        leftBG: '#000B4C',
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1712186480/Niko/chef-kapernaros.family2_kxxwzi.jpg',
         picNote: ''
     }
     const slide5 = {
-        description: 'In June 2018, Chef Niko began carving a new path in the Windy City as Chef de Cuisine at the Hyatt Regency Chicago.',
-        leftBG: '#262626',
+        description: 'In June 2018, I began carving my new path in Chicago as Chef de Cuisine at the Hyatt Regency Chicago.',
+        leftBG: '#000000',
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1712191409/Niko/Untitled_design_14_hjsup9.webp',
         picNote: 'Hyatt Regency Chicago'
     }
     const slide6 = {
-        description: 'In 2021, he joined the Avli restaurant group and opened Avli on the Park, located in Chicago Lakeshore East, to lead and expand the vision of contemporary Greek cuisine, where everything is made from scratch.',
-        leftBG: '#000B4C',
+        description: 'In 2021, I joined the Avli restaurant group and assisted with opening Avli on the Park, located in Chicago Lakeshore East. I was hired to lead and expand the vision of contemporary Greek cuisine with an emphasis of curating a menu where everything is made from scratch. In 2023, the culinary team’s efforts were recognized and the restaurant was named a Michelin 2023 Honoree.',
+        leftBG: '#262626',
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1712191635/Niko/IMG_20210701_161941_808_qdmrcm.jpg',
         picNote: 'Avli on the Park, Lakeshore East, Chicago'
+    }
+    const slide7 = {
+        description: 'After three years at Avil on the Park, in June of 2024, I welcomed a new challenge and accepted a position with Levy Restaurants Cultural Attractions as Executive Chef of Navy Pier Chicago.  Here, I fuse culinary experiences with the timeless architectural beauty of Chicago and Lake Michigan.',
+        leftBG: '#000B4C',
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1719276331/Kapernaros-navyPier_dgxwap.jpg',
+        picNote: 'Levy Restaurants, Navy Pier, Chicago'
     }
     
     const newSlidesList = new slidesList()
@@ -110,6 +116,7 @@ function initCarousel() {
     newSlidesList.append(slide4)
     newSlidesList.append(slide5)
     newSlidesList.append(slide6)
+    newSlidesList.append(slide7)
     
     let carouselElement = document.querySelector('#carousel') as HTMLDivElement
 
