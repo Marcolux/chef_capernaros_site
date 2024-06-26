@@ -33,7 +33,7 @@ $gold: #b59b07;
         .picDescr:not(.noBG){
             height: 0%;
             width: 100%;
-            background-color: #00000096;
+            background-color: #000000b7;
             color: #f8f8f5;
             transition: all 0.4s ease-in-out;
             position: absolute;
@@ -44,14 +44,17 @@ $gold: #b59b07;
             align-items: start;
             h3{
                 display: flex;
-                margin:  0px 0px 0px 35px;
-                font-size: 16px;
-                text-shadow:     
-                    -1px -1px 1px #000000,
-                    1px -1px 1px #000000,
-                    -1px 1px 1px #000000,
-                    1px 1px 1px #000000;
+                margin:  0px 0px 0px 25px;
+                font-size: 15px;
+                // text-shadow:     
+                //     -1px -1px 1px #000000,
+                //     1px -1px 1px #000000,
+                //     -1px 1px 1px #000000,
+                //     1px 1px 1px #000000;
                 text-align: start;
+                background-color: #b59b07b7;
+                color: #000000 !important;
+                padding: 0px 5px !important;
             }
             ul{
                 font-size: 14px !important;
@@ -60,7 +63,10 @@ $gold: #b59b07;
                 margin-left: 10px;
                 color: #fafafa;
 
-                li{ width: fit-content;}
+                li{ width: fit-content;
+                
+                    // background-color: #000000ab;
+                }
 
                 text-shadow:     
                     -1px -1px 1px #000000,
