@@ -42,6 +42,19 @@
         <link rel="preload" href="https://res.cloudinary.com/drdrs6pdq/image/upload/w_700/v1709720633/Niko/Chef_Kapernaros_charity_events_pic_4_swqkut.webp" as="image">
         <link rel="preload" href="https://res.cloudinary.com/drdrs6pdq/image/upload/w_800/v1709720634/Niko/Chef_Kapernaros_charity_events_pic_1_diom0m.webp" as="image">
         <link rel="preload" href="https://res.cloudinary.com/drdrs6pdq/image/upload/v1709722273/Niko/Chef_Kapernaros_logo_white_no_BG_xik49g.webp" as="image">
+
+        <!-- preload chef table's pics -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('chef-kapernaros/pages/preload-chef-table-links.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        const head = document.querySelector('head')
+                        head.insertAdjacentHTML('beforeend', data)
+                    })
+                .catch(error => console.error('Error loading preload links:', error))
+            })
+        </script>
         
         <!-- Title -->
         <title>Chef Kapernaros</title>
