@@ -220,7 +220,7 @@
     width: 100%;
     background-color: #b59b07;
     left: 0%;
-    bottom: 50px;
+    bottom: 30px;
   }
   #contactPage #chefForm #lineGold2 {
     position: absolute;
@@ -231,13 +231,13 @@
     height: 2px;
     background-color: #b59b07;
     left: 0%;
-    bottom: 40px;
+    bottom: 10px;
   }
   #contactPage #chefForm #logoPic {
     display: none !important;
   }
   #contactPage #chefForm #myForm {
-    top: 15vh !important;
+    top: 20vh !important;
     width: 90% !important;
     height: -webkit-fit-content;
     height: -moz-fit-content;
