@@ -69,6 +69,10 @@ function initPicCollection(newPicturesList, collection) {
             var nullCaption = carouselElement.querySelector('.mediaCaption');
             nullCaption === null || nullCaption === void 0 ? void 0 : nullCaption.classList.add('hide');
         }
+        if (picture.src === 'https://res.cloudinary.com/drdrs6pdq/image/upload/v1714608753/Niko/f_f_14_dulpgp.webp') {
+            var nullCaption = carouselElement.querySelector('.mediaCaption');
+            nullCaption.style.right = '88%';
+        }
         setTimeout(function () {
             var imgs = carouselElement.querySelector('img');
             var imgShowing = carouselElement.querySelector('#picShowing');
