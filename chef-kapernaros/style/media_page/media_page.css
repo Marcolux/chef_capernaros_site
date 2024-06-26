@@ -185,10 +185,12 @@
 #media_section #mediaContainer #mediaShowCont #bigPic #picShowing .picDiv .mediaCaption {
   position: absolute;
   bottom: 5%;
-  right: 30%;
-  color: #ffffff;
+  right: 87%;
+  width: 73%;
+  text-align: center;
+  color: #f8f8f5;
+  background-color: #b59b0792;
   font-size: 20px;
-  text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
 }
 
 #media_section #mediaContainer #mediaShowCont #bigPic #picShowing.fullscreen-mode .picToEn {
@@ -380,6 +382,8 @@
   }
   body #media_section #mediaContainer #mediaShowCont #bigPic #picShowing .picDiv .mediaCaption {
     bottom: 15%;
+    width: 100%;
+    right: 100%;
   }
   body #media_section #mediaContainer #mediaShowCont #bigPic #picShowing.fullscreen-mode .picToEn {
     -o-object-fit: contain;
@@ -573,7 +577,10 @@
     max-height: 360px;
   }
   body #media_section #mediaContainer #mediaShowCont #bigPic #picShowing .picDiv .mediaCaption {
-    bottom: 20%;
+    bottom: 15%;
+    right: 0%;
+    width: 100%;
+    background-color: #000000bb;
   }
   body #media_section #mediaContainer #mediaShowCont #bigPic #picShowing.fullscreen-mode .picToEn {
     -o-object-fit: contain;
