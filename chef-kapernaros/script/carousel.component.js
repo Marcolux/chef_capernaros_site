@@ -87,6 +87,7 @@ function initCarousel() {
         rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/q_auto,f_auto/v1719343585/Kapernaros_NavyPier_gae6ms.webp',
         picNote: 'Navy Pier, Chicago'
     };
+    // After adding a new slide update the circle_(lastIndex) in scss file too
     var newSlidesList = new slidesList();
     // Append slide objects
     newSlidesList.append(slide1);
@@ -112,8 +113,8 @@ function initCarousel() {
                 circleWhite.classList.add('moveUp');
                 setTimeout(function () {
                     picNote.classList.add('darker');
-                }, 250);
-                if (!circleWhite.classList.contains('circle_5')) {
+                }, 150);
+                if (!circleWhite.classList.contains('circle_6')) {
                     setTimeout(function () {
                         circleWhite.style.opacity = '1';
                         circleWhite.style.transform = 'translateY(0%)';

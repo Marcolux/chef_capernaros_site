@@ -155,7 +155,7 @@
           transform: translateY(-1150%);
 }
 
-.carouselContainer #timeline #circleWhite:not(.circle_5).moveUp {
+.carouselContainer #timeline #circleWhite:not(.circle_6).moveUp {
   -webkit-transform: translateY(1150%);
           transform: translateY(1150%);
 }
