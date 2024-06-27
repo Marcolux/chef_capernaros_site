@@ -129,8 +129,8 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
             nullCaption?.classList.add('hide')
         }
         if (picture.src === 'https://res.cloudinary.com/drdrs6pdq/image/upload/q_auto,f_auto/v1714608753/Niko/f_f_14_dulpgp.webp') {
-            const nullCaption = carouselElement.querySelector('.mediaCaption') as HTMLElement
-            nullCaption.style.right = '88%'
+            const firstCaption = carouselElement.querySelector('.mediaCaption') as HTMLElement
+            firstCaption.style.right = '88%'
         }
         setTimeout(()=>{
 
