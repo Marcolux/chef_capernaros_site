@@ -578,7 +578,7 @@
   }
   body #media_section #mediaContainer #mediaShowCont #bigPic #picShowing .picDiv .mediaCaption {
     bottom: 15%;
-    right: 0%;
+    right: 0% !important;
     width: 100%;
     background-color: #000000bb;
   }
