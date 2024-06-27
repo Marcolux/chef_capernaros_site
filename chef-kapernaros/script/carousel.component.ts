@@ -103,7 +103,7 @@ function initCarousel() {
     const slide7 = {
         description: 'In June of 2024, I welcomed a new challenge and accepted a position with Levy Restaurants Cultural Attractions as Executive Chef of Navy Pier Chicago.  Here, I fuse culinary experiences with the timeless architectural beauty of Chicago and Lake Michigan.',
         leftBG: '#000B4C',
-        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/q_auto,f_auto/v1719276331/Kapernaros-navyPier_dgxwap.webp',
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/q_auto,f_auto/v1719343585/Kapernaros_NavyPier_gae6ms.webp',
         picNote: 'Navy Pier, Chicago'
     }
     
