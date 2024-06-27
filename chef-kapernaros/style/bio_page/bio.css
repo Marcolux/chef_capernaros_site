@@ -88,6 +88,7 @@
   text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px  1px 2px #000;
   background-color: #00000093;
   padding: 0px 10px;
+  font-size: 20px !important;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
@@ -285,6 +286,18 @@ section#career-highlights .highlights li:hover::before {
 
 .animated-highlight {
   color: #b59b07 !important;
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1170px) {
+  .singleCarouselSlide {
+    width: 100% !important;
+  }
+  #slide_2 #slideText, #slide_3 #slideText, #slide_4 #slideText, #slide_6 #slideText {
+    padding: 15px !important;
+  }
+  #slide_2 #slideText p, #slide_3 #slideText p, #slide_4 #slideText p, #slide_6 #slideText p {
+    font-size: 15px !important;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

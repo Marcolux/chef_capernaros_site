@@ -68,6 +68,7 @@ $gold: #b59b07;
                     -1px  1px 2px #000;
                     background-color: #00000093;
                     padding: 0px 10px;
+                    font-size: 20px !important;
                     &:not(.note_0){
                         opacity: 0;
                     }
@@ -210,8 +211,18 @@ section#career-highlights{
 }
 .animated-highlight { color: $gold !important; }
 
-@media only screen and (min-width: 1301px) and (max-width: 1400px) {
-    
+@media only screen and (min-width: 930px) and (max-width: 1170px) {
+    .singleCarouselSlide {
+        width: 100% !important;
+    }
+    #slide_2,#slide_3,#slide_4,#slide_6 {
+        #slideText{
+            padding: 15px !important;
+            p {
+                font-size: 15px !important;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 1200px) {
     #cardsContainer { width: 95% !important;}

@@ -97,7 +97,7 @@ function initCarousel() {
     const slide6 = {
         description: 'In 2021, I joined the Avli restaurant group and assisted with opening Avli on the Park, located in Chicago Lakeshore East. I was hired to lead and expand the vision of contemporary Greek cuisine with an emphasis of curating a menu where everything is made from scratch. In 2023, the culinary team’s efforts were recognized and the restaurant was named a Michelin 2023 Honoree.',
         leftBG: '#262626',
-        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/q_auto,f_auto/v1712191635/Niko/IMG_20210701_161941_808_qdmrcm.webp',
+        rightBG: 'https://res.cloudinary.com/drdrs6pdq/image/upload/q_auto,f_auto/w_800/v1712191635/Niko/IMG_20210701_161941_808_qdmrcm.webp',
         picNote: 'Avli on the Park, Lakeshore East, Chicago'
     }
     const slide7 = {
@@ -124,7 +124,7 @@ function initCarousel() {
 
         const slide = newSlidesList.getSingleSlide(index) as Slide
         carouselElement.innerHTML = `
-            <div class="flex singleCarouselSlide">
+            <div class="flex singleCarouselSlide" id="slide_${index+1}">
                 <div id="timeline" class="flex flex-column flex-justifyContent-spaceAround">
                     
                     <div id="lineWhite"></div>
