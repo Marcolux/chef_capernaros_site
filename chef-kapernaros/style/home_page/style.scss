@@ -581,10 +581,6 @@ $primaryColorLight: #00000090;
 	justify-content: center;
 	background-color: #2f2f2fca;
 	pointer-events: none;
-	&.zeroHeight{
-		height: 0px;
-		width: 0px;
-	}
 	#bobbyFlayDiv{
 		#closingPopup{
 			pointer-events: all !important;
@@ -624,7 +620,9 @@ $primaryColorLight: #00000090;
 			padding: 10px;
 			justify-self: center;
 			// pointer-events: all !important;
-			
+			p{
+				color: #C3C3C3 !important;
+			}
 			i::before{
 				color: #bf1f2f;
 				font-size: 25px;
@@ -787,6 +785,17 @@ $primaryColorLight: #00000090;
 		width: 100% !important;
 		&.cards23Cont{
 			width: 90vw !important;
+		}
+	}
+	#bobbyFlay{
+		#bobbyFlayDiv{
+			height: 90%;
+			width: 90%;
+			min-width: 530px;
+			min-height: 708px;
+			#highlightsBob{
+				width: 90%;
+			}
 		}
 	}
 }
@@ -952,7 +961,6 @@ $primaryColorLight: #00000090;
 			span{ font-size: 28px !important}
 		}
 	}
-
 	.middlePic{
 		>div{
 			width: 90% !important;
@@ -1104,6 +1112,17 @@ $primaryColorLight: #00000090;
 		img{
 			align-self: baseline;
 			height: 11vh;
+		}
+	}
+	#bobbyFlay{
+		#bobbyFlayDiv{
+			height: 90%;
+			width: 90%;
+			min-width: 530px;
+			min-height: 708px;
+			#highlightsBob{
+				width: 90%;
+			}
 		}
 	}
 

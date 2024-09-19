@@ -733,11 +733,6 @@ html, body {
   pointer-events: none;
 }
 
-#bobbyFlay.zeroHeight {
-  height: 0px;
-  width: 0px;
-}
-
 #bobbyFlay #bobbyFlayDiv {
   cursor: pointer;
   border: 10px solid #ffffff;
@@ -788,6 +783,10 @@ html, body {
   color: #C3C3C3;
   padding: 10px;
   justify-self: center;
+}
+
+#bobbyFlay #bobbyFlayDiv #highlightsBob p {
+  color: #C3C3C3 !important;
 }
 
 #bobbyFlay #bobbyFlayDiv #highlightsBob i::before {
@@ -947,6 +946,15 @@ html, body {
   }
   .cardsLine.cards23Cont {
     width: 90vw !important;
+  }
+  #bobbyFlay #bobbyFlayDiv {
+    height: 90%;
+    width: 90%;
+    min-width: 530px;
+    min-height: 708px;
+  }
+  #bobbyFlay #bobbyFlayDiv #highlightsBob {
+    width: 90%;
   }
 }
 
@@ -1325,6 +1333,15 @@ html, body {
     -ms-flex-item-align: baseline;
         align-self: baseline;
     height: 11vh;
+  }
+  #bobbyFlay #bobbyFlayDiv {
+    height: 90%;
+    width: 90%;
+    min-width: 530px;
+    min-height: 708px;
+  }
+  #bobbyFlay #bobbyFlayDiv #highlightsBob {
+    width: 90%;
   }
 }
 
