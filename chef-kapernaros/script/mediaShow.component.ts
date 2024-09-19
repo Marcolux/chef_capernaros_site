@@ -1,4 +1,3 @@
-
 interface Picture {
     src: string
     caption: string | null
@@ -63,7 +62,6 @@ class picCollection {
 
 function initPicCollection(newPicturesList: picCollection, collection: Picture[]) {
 
-
     let bigPic = document.querySelector(`#bigPic`) as HTMLDivElement
     let carouselElement = bigPic.querySelector(`#singlePicCont`) as HTMLDivElement
     carouselElement.innerHTML = ''
@@ -73,13 +71,11 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
         collection.forEach(picture => { newPicturesList.append(picture) })
     }
 
-
     function showPicture(index: number) {
         carouselElement.innerHTML = ''
         
         const picture = newPicturesList.getSinglePic(index) as Picture
         if (index < newPicturesList.getLastIndex() && index !== 0) {
-
             carouselElement.innerHTML = `
                 <div id="picShowing" class="flex flex-alignItems-center">
                     <button class="p-20" id="prevPicture">
@@ -109,7 +105,6 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
                 </div>
             `
         } else if (index === 0) {
-
             carouselElement.innerHTML = `
                 <div id="picShowing" class="flex flex-alignItems-center">
                     <div class="p-20 emptyBox"></div>
@@ -133,7 +128,6 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
             firstCaption.style.right = '88%'
         }
         setTimeout(()=>{
-
             const imgs = carouselElement.querySelector('img') as HTMLImageElement
             const imgShowing = carouselElement.querySelector('#picShowing') as HTMLImageElement
             imgs.classList.add('show')
@@ -141,11 +135,9 @@ function initPicCollection(newPicturesList: picCollection, collection: Picture[]
                 imgs.requestFullscreen()
                 imgShowing.classList.add('fullscreen-mode')
             })
-
             document.addEventListener('fullscreenchange', () => {
                 if (!document.fullscreenElement) { imgShowing.classList.remove('fullscreen-mode')  }
             })   
-
         },150) 
     
         const prevButton = document.getElementById('prevPicture') as HTMLElement
@@ -298,6 +290,11 @@ document.addEventListener('DOMContentLoaded', function() {
     ]
     const competitionShows_src = [
         {src:"competitionShows", caption: null },
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1726763368/Niko/competitions/BobbyFlay_3_pwamwn.webp", caption: null },
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1726763368/Niko/competitions/BobbyFlay_2_flbrxf.webp", caption: null },
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1726763368/Niko/competitions/BobbyFlay_1_ln5jbt.webp", caption: null },
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1726763368/Niko/competitions/BobbyFlay_5_b9cztz.webp", caption: null },
+        {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1726763368/Niko/competitions/BobbyFlay_4_u0abbm.webp", caption: null },
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714619837/Niko/competitions/c_s_8_a7ucnk.webp", caption: null },
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1714619857/Niko/competitions/c_s_10_cgzqss.webp", caption: null },
         {src:"https://res.cloudinary.com/drdrs6pdq/image/upload/v1715043709/viber_image_2024-05-01_23-12-10-266_s3fepo.webp", caption: null },
@@ -369,7 +366,18 @@ document.addEventListener('DOMContentLoaded', function() {
             initPicCollection(picColl[0], picSource[0])
         })
     })
-    allNotActiveTi[0].click()
+    allNotActiveTi[3].addEventListener('click', () => {
+       if ( localStorage.getItem('loading_competions') === 'true' )
+            localStorage.removeItem('loading_competions')
+    })
+    localStorage.getItem('loading_competions') === 'true' ?
+        allNotActiveTi[3].click()
+    :
+        allNotActiveTi[0].click()
+
+    
+
+
 })
 
   
